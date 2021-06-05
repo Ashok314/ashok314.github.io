@@ -10,7 +10,7 @@ Have a look here.
 
  View it on Figma
 <a href="https://www.figma.com/file/sJGrUfrMnccMSDjGpcwNhs/portfolio">
-   <img width= 50; height=50; src="https://seeklogo.com/images/F/figma-logo-E4E21D3AEA-seeklogo.com.png">
+   <img width= "50" height="50" src="https://seeklogo.com/images/F/figma-logo-E4E21D3AEA-seeklogo.com.png">
 </a>
 
 
