@@ -5,8 +5,8 @@ Hang in there while i am working to implement it.
 ## Design V.0 is ready to roll
 Need more polishing and refinement. <br>
 Have a look here.
-![figma link https://www.figma.com/file/sJGrUfrMnccMSDjGpcwNhs/portfolio?node-id=0%3A1](https://github.com/Ashok314/ashok314.github.io/blob/main/assets/design_figma.png)
-
+![figma link https://www.figma.com/file/sJGrUfrMnccMSDjGpcwNhs/portfolio?node-id=0%3A1](https://ashok314.github.io/assets/design_figma.png)
+<br>
 [Meanwhile, check my google site](https://sites.google.com/view/ashok314)
 <br>[Check my writings(Poems)](https://www.mirakee.com/ashnoom)
 <br>
