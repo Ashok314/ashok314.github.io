@@ -2,6 +2,9 @@
 Hang in there while i am working to implement it. 
 
 # Update
+> ## Bug Report; Bypassing Weekly Limits In Basic (Free) LinkedIn Account
+> [Blog Report](https://pi.hashnode.dev/linkedin-bug-report)
+
 ## Design V.0 is ready to roll
 Need more polishing and refinement. <br>
 Have a look here.
