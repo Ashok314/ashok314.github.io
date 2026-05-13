@@ -23,5 +23,15 @@ social_links:
   - { platform: github, user_url: "https://github.com/Ashok314" }
   - { platform: linkedin, user_url: "https://www.linkedin.com/in/ashok314/" }
 
+exclude:
+  - DEV.md
+  - Gemfile
+  - Gemfile.lock
+
 plugins:
   - jekyll-feed
+
+collections:
+  cooking:
+    output: true
+    permalink: /cooking/:name/
