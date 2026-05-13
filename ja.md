@@ -4,10 +4,7 @@ title: プロフィール
 permalink: /ja/
 ---
 
-# アショク・アチャリャ
-
-ソフトウェアエンジニア・研究者 — 東京（現在：大阪）  
-[GitHub](https://github.com/Ashok314) · [LinkedIn](https://www.linkedin.com/in/ashok314/) · [ブログ](https://pi.hashnode.dev) · [English](/)
+*ソフトウェアエンジニア・研究者 — 東京（現在：大阪）*  [English](/)
 
 ---
 
@@ -21,31 +18,42 @@ permalink: /ja/
 
 ## 職務経歴
 
-**フルスタックエンジニア / チームリード**  
-製造業特化型マッチングサービス会社 *(2024年9月 ～ 現在)*
-- 製造業マッチングサービスの機能開発（NestJS, NextJS, GraphQL, Postgres）
-- 会議の文字起こしツール開発（TypeScript, NestJS, Chrome Extension）
-- フルスタックアーキテクチャ設計・コードレビュー
-- データエンジニアリング・社内サービスのデータ管理・チームリード（NestJS, AWS, Lakehouse, Terraform）
-- 役割：メンバー → チームリード
+**フルスタックエンジニア → チームリード**  
+Eigyo Mfg Co., Ltd. *(2024年9月 ～ 現在)*  
+- B2B製造業マッチングプラットフォームの機能開発をリード
+- 会議の文字起こしツールおよび社内データツールの開発
+- アーキテクチャ設計・コードレビュー・チームリード
+- *NestJS, NextJS, GraphQL, TypeScript, AWS, Terraform*
 
 **Webオープンエンジニア**  
-株式会社プライシングスタジオ *(2023年3月 ～ 2024年)*
+株式会社プライシングスタジオ *(2023年3月 ～ 2024年9月)*  
 - B2B向け調査ツールのフロントエンド設計・システムアーキテクチャ全体をリード
-- 社内Web認証システムの構築（AWS Cognito, Angular, TypeScript）
+- 社内Web認証システムの構築
 - 自社メディアの運用・マーケティング・デザインチームとの連携
-- 使用技術：Angular, Go (Echo), DynamoDB, AWS, Docker
+- *Angular, Go (Echo), DynamoDB, AWS, Docker*
 
 **AIエンジニア**  
-AI Infinity株式会社 *(2021年6月 ～ 2023年1月)*
+AI Infinity株式会社 *(2021年6月 ～ 2023年1月)*  
 - 10名のチームをリードし、B2B向け音声認識（ASR）製品を開発
-- NLPチームと連携したASR+NLP融合製品の提供、クライアント要件対応・PoC環境構築
-- 使用技術：Ruby, PHP, Vue.js, AWS (EC2), WebSocket
+- ASR+NLP融合製品の提供、クライアント要件対応・PoC環境構築
+- *Ruby, PHP, Vue.js, AWS (EC2), WebSocket*
 
 **ソフトウェア開発サポート**  
-Meetscom株式会社 *(2019年3月 ～ 2020年2月)*
-- Vue.js, Swift (Vapor), Node.jsを用いたWeb開発・運用
-- Python, AWS SageMaker, RedshiftによるSNSデータの感情分析
+Meetscom株式会社 *(2019年3月 ～ 2020年2月)*  
+- Webアプリケーションの開発・運用
+- SNSデータの感情分析（機械学習）
+- *Vue.js, Swift (Vapor), Node.js, Python (SageMaker, Redshift), AWS*
+
+---
+
+## 注目プロジェクト
+
+| プロジェクト | 説明 | 技術 |
+|---|---|---|
+| [yakiben](https://github.com/Ashok314/yakiben) | やきべん — 顧客・管理者向けお弁当予約システム（PWA） | Vue 3, TypeScript, Supabase |
+| [election-np](https://github.com/Ashok314/election-np) | ネパール選挙リアルタイムダッシュボード（インタラクティブ地図） | React, Vite, Supabase, Puppeteer |
+| [nlp](https://github.com/Ashok314/nlp) | 日本語不適切表現フィルター・感情分析 | Python, MeCab, FastText |
+| [Rnotebook](https://github.com/Ashok314/Rnotebook) | NASAデータセットを用いたソフトウェア欠陥分析・予測 | R |
 
 ---
 
@@ -53,7 +61,8 @@ Meetscom株式会社 *(2019年3月 ～ 2020年2月)*
 
 **早稲田大学** — 東京  
 情報理工学研究科 修士課程 修了 *(2019年 ～ 2021年)*  
-修士論文：*分離ロジック式を用いたプログラムテスト*
+修士論文：[*分離ロジック式を用いたプログラムテスト*](https://www.waseda.jp/fsci/assets/uploads/2021/04/8c576477c2a327565a235bef80c6dfde.pdf) *(2020年度 基幹理工学研究科 修士論文 — 情報理工・情報通信専攻)*  
+修士研究室：[寺内研究室](https://terauchi.w.waseda.jp/) — [修了生一覧](https://terauchi.w.waseda.jp/paststudents.html)
 
 **SJCIT, Visvesvaraya Technological University (VTU)** — バンガロール, インド  
 コンピュータサイエンス工学 学士 *(2014年 ～ 2018年)*
@@ -74,7 +83,7 @@ Meetscom株式会社 *(2019年3月 ～ 2020年2月)*
 
 ## 研究・学術プロジェクト
 
-**分離ロジック式を用いたプログラムテスト** *(修士論文, 2020年)*  
+**[分離ロジック式を用いたプログラムテスト](https://www.waseda.jp/fsci/assets/uploads/2021/04/8c576477c2a327565a235bef80c6dfde.pdf)** *(修士論文, 2020年度 — 基幹理工学研究科 情報理工・情報通信専攻)*  
 Cプログラムを分離ロジック式で表現し、一階述語論理式に変換。SATソルバーを用いてテストケースを自動生成し、動的メモリを使用するプログラムのポインタ安全性を検証するテストシステムを開発。
 
 **ソフトウェア品質保証 — 分析・予測** *(2020年)*  
@@ -93,6 +102,19 @@ RedditやTwitterからクローリングした日本語テキストとオープ�
 - 🎓 **学生ボランティア** — SPLASH'20、ACM SIGPLANカンファレンス（2020年）
 - 📋 **オーガナイザー** — テックフェスト TECHNOTSAV、PEOPLEWARE CLUB（2014〜2018年）
 - 🐍 **ワークショップ** — Machine Learning Using Python（2018年）
+
+---
+
+## 執筆・ノート
+
+| | |
+|---|---|
+| 📚 [本](/books/) | 読書メモ・おすすめ |
+| 🎬 [映画](/films/) | 鑑賞記録・感想 |
+| ✍️ [詩](/poems/) | 短い文章・詩 |
+| 💻 [テックノート](/tech/) | 技術記事・開発メモ |
+
+→ [Hashnode](https://pi.hashnode.dev) でも公開中
 
 ---
 

@@ -1,7 +1,6 @@
 theme: minima
 
 title: Ashok Acharya
-email: acharya@fuji.waseda.jp
 description: >-
   Software Engineer & Researcher. Programming Languages, Software Verification,
   Separation Logic. Based in Tokyo.
@@ -13,6 +12,11 @@ minima:
 
 header_pages:
   - index.md
+  - books.md
+  - films.md
+  - poems.md
+  - tech.md
+  - cooking.md
 
 social_links:
   - { platform: github, user_url: "https://github.com/Ashok314" }
