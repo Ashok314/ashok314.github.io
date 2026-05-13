@@ -76,8 +76,9 @@ Meetscom株式会社 *(2019年3月 ～ 2020年2月)*
 | 言語 | TypeScript, JavaScript, Python, Go, PHP, Ruby |
 | フレームワーク | NestJS, NextJS, Angular, Django, Echo, Flutter, Vue.js |
 | クラウド・ツール | AWS, Docker, Git, Terraform, Postman, DynamoDB, PostgreSQL |
+| データ・インフラ | Lakehouse / ビッグデータ, CI/CD |
 | 研究 | 分離ロジック, SATソルバー, ソフトウェア検証 |
-| 語学 | 日本語（ビジネスレベル・BJT J3 / JLPT N2）、英語（流暢） |
+| 語学 | ネパール語（母国語）、ヒンディー語（母国語）、英語（流暢）、日本語 — BJT J3 / JLPT N2 |
 
 ---
 
@@ -113,6 +114,7 @@ RedditやTwitterからクローリングした日本語テキストとオープ�
 | 🎬 [映画](/films/) | 鑑賞記録・感想 |
 | ✍️ [詩](/poems/) | 短い文章・詩 |
 | 💻 [テックノート](/tech/) | 技術記事・開発メモ |
+| 🍳 [料理](/cooking/) | レシピ・食の記録 |
 
 → [Hashnode](https://pi.hashnode.dev) でも公開中
 

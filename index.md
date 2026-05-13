@@ -74,8 +74,9 @@ B.E. in Computer Science Engineering *(2014 – 2018)*
 | Languages | TypeScript, JavaScript, Python, Go, PHP, Ruby |
 | Frameworks | NestJS, NextJS, Angular, Django, Echo, Flutter, Vue.js |
 | Cloud & Tools | AWS, Docker, Git, Terraform, Postman, DynamoDB, PostgreSQL |
+| Data & Infra | Lakehouse / Big Data, CI/CD |
 | Research | Separation Logic, SAT Solvers, Software Verification |
-| Languages | English (fluent), Japanese — BJT J3 / JLPT N2 |
+| Human Languages | Nepali (native), Hindi (native), English (fluent), Japanese — BJT J3 / JLPT N2 |
 
 ---
 
@@ -111,6 +112,7 @@ Built a classifier using web-crawled Japanese text (Reddit, Twitter) and open da
 | 🎬 [Films](/films/) | Watches & thoughts |
 | ✍️ [Poems](/poems/) | Short writings |
 | 💻 [Tech Notes](/tech/) | Articles & dev notes |
+| 🍳 [Cooking](/cooking/) | Recipes & food experiments |
 
 → Also on [Hashnode](https://pi.hashnode.dev)
 
