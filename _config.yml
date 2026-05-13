@@ -1,1 +1,22 @@
-theme: jekyll-theme-hacker
+theme: minima
+
+title: Ashok Acharya
+email: acharya@fuji.waseda.jp
+description: >-
+  Software Engineer & Researcher. Programming Languages, Software Verification,
+  Separation Logic. Based in Tokyo.
+
+url: "https://ashok314.github.io"
+
+minima:
+  skin: classic
+
+header_pages:
+  - index.md
+
+social_links:
+  - { platform: github, user_url: "https://github.com/Ashok314" }
+  - { platform: linkedin, user_url: "https://www.linkedin.com/in/ashok314/" }
+
+plugins:
+  - jekyll-feed
