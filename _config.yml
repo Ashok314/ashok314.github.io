@@ -35,3 +35,10 @@ collections:
   cooking:
     output: true
     permalink: /cooking/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: cooking
+    values:
+      layout: recipe
