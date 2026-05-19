@@ -113,7 +113,7 @@ RedditやTwitterからクローリングした日本語テキストとオープ�
 | 📚 [本](/books/) | 読書メモ・おすすめ |
 | 🎬 [映画](/films/) | 鑑賞記録・感想 |
 | ✍️ [詩](/poems/) | 短い文章・詩 |
-| 💻 [テックノート](/tech/) | 技術記事・開発メモ |
+| 💻 [tech.log](/tech/) | 技術記事 |
 | 🍳 [料理](/cooking/) | レシピ・食の記録 |
 
 → [Hashnode](https://pi.hashnode.dev) でも公開中

@@ -111,7 +111,7 @@ Built a classifier using web-crawled Japanese text (Reddit, Twitter) and open da
 | 📚 [Books](/books/) | Reading notes & recommendations |
 | 🎬 [Films](/films/) | Watches & thoughts |
 | ✍️ [Poems](/poems/) | Short writings |
-| 💻 [Tech Notes](/tech/) | Articles & dev notes |
+| 💻 [tech.log](/tech/) | Articles & dev notes |
 | 🍳 [Cooking](/cooking/) | Recipes & food experiments |
 
 → Also on [Hashnode](https://pi.hashnode.dev)

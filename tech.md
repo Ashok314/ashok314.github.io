@@ -1,23 +1,22 @@
 ---
 layout: home
-title: Tech Notes
+title: tech.log
 permalink: /tech/
 ---
 
-*Dev notes, articles, and things worth writing down.*
+*Articles, tutorials, opinions, and things worth writing down.*
 
 ---
 
-<!-- Format:
-**Title** *(date)*
-Short description or summary.
-[Read more →](link)
+{% for post in site.tech reversed %}
+**[{{ post.title }}]({{ post.url }})**
+*{{ post.date | date: "%B %d, %Y" }}*{% if post.type %} · {{ post.type }}{% endif %}
 
-To add images, drop image files into /assets/images/ and reference them like:
-![alt text](/assets/images/your-image.jpg)
--->
+{{ post.tagline }}
+
+---
+{% endfor %}
 
 → Cross-posted on [Hashnode](https://pi.hashnode.dev)
 
-*Nothing here yet — check back soon.*
 

@@ -35,6 +35,9 @@ collections:
   cooking:
     output: true
     permalink: /cooking/:name/
+  tech:
+    output: true
+    permalink: /tech/:name/
 
 defaults:
   - scope:
@@ -42,3 +45,8 @@ defaults:
       type: cooking
     values:
       layout: recipe
+  - scope:
+      path: ""
+      type: tech
+    values:
+      layout: article
