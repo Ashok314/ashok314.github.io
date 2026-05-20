@@ -38,6 +38,8 @@ collections:
   tech:
     output: true
     permalink: /tech/:name/
+  poems:
+    output: false
 
 defaults:
   - scope:
