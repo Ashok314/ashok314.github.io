@@ -7,6 +7,12 @@ en:
     cooking.md: Cooking
   header:
     search: Search all content
+  theme:
+    label: Color theme
+    light: Light
+    dark: Dark
+    grey: Grey
+    contrast: High contrast
   footer:
     display_name: Ashok Acharya
     description: Software Engineer & Researcher. Programming Languages, Software Verification, Separation Logic. Based in Tokyo.
@@ -75,6 +81,12 @@ ja:
     cooking.md: 料理
   header:
     search: サイト内検索
+  theme:
+    label: カラーテーマ
+    light: ライト
+    dark: ダーク
+    grey: グレー
+    contrast: ハイコントラスト
   footer:
     display_name: アチャリャ・アソック
     description: ソフトウェアエンジニア・研究者。プログラミング言語、ソフトウェア検証、分離論理。東京を拠点に活動。
@@ -143,6 +155,12 @@ ne:
     cooking.md: पाककला
   header:
     search: साइटमा खोज्नुहोस्
+  theme:
+    label: रङ थिम
+    light: उज्यालो
+    dark: अँध्यारो
+    grey: खैरो
+    contrast: उच्च कन्ट्रास्ट
   footer:
     display_name: अशोक आचार्य
     description: सफ्टवेयर इन्जिनियर तथा अनुसन्धानकर्ता। प्रोग्रामिङ भाषा, सफ्टवेयर प्रमाणीकरण र सेपरेसन लजिक। टोकियोमा आधारित।
@@ -211,6 +229,12 @@ hi:
     cooking.md: पाककला
   header:
     search: साइट पर खोजें
+  theme:
+    label: रंग थीम
+    light: हल्का
+    dark: गहरा
+    grey: धूसर
+    contrast: उच्च कंट्रास्ट
   footer:
     display_name: अशोक आचार्य
     description: सॉफ्टवेयर इंजीनियर और शोधकर्ता। प्रोग्रामिंग भाषाएँ, सॉफ्टवेयर सत्यापन और सेपरेशन लॉजिक। टोक्यो में स्थित।
