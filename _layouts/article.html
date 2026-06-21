@@ -1,20 +1,22 @@
 ---
 layout: default
 ---
+{% assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" %}
+{% assign ui = site.data.ui[interface_lang] | default: site.data.ui.en %}
 <article class="tech-article">
   <header>
     <h1>{{ page.title }}</h1>
 
     <p class="article-meta">
       <time>{{ page.date | date: "%B %d, %Y" }}</time>
-      {%- if page.updated %} · Updated: {{ page.updated }}{% endif %}
+      {%- if page.updated %} · <span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="updated">{{ ui.article.updated }}</span>: {{ page.updated }}{% endif %}
       {%- if page.version %} · v{{ page.version }}{% endif %}
       {%- if page.type %} · {{ page.type }}{% endif %}
       {%- if page.tags.size > 0 %} · {% for tag in page.tags %}{{ tag }}; {% endfor %}{% endif %}
       &nbsp;&nbsp;
       {% assign words = content | number_of_words %}
       {% assign minutes = words | divided_by: 200 | plus: 1 %}
-      <span class="article-reading">&#128338; {{ minutes }} min read · {{ words }} words</span>
+      <span class="article-reading">&#128338; {{ minutes }} <span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="min_read">{{ ui.article.min_read }}</span> · {{ words }} <span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="words">{{ ui.article.words }}</span></span>
     </p>
 
     {%- if page.tagline %}<p class="article-tagline"><em>{{ page.tagline }}</em></p>{% endif %}
@@ -23,17 +25,17 @@ layout: default
   {%- if page.generated %}
   <blockquote>
     {%- if page.author_note %}
-    &#129302; AI-generated · includes a note from the author
+    &#129302; <span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="ai_author_note">{{ ui.article.ai_author_note }}</span>
     {%- else %}
-    &#129302; AI-generated content
+    &#129302; <span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="ai_generated">{{ ui.article.ai_generated }}</span>
     {%- endif %}
     {%- if page.source_url and page.source_url != "" %}
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;Original conversation: <a href="{{ page.source_url }}" target="_blank" rel="noopener">link →</a>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="original_conversation">{{ ui.article.original_conversation }}</span> <a lang="{{ interface_lang }}" href="{{ page.source_url }}" target="_blank" rel="noopener"><span data-ui-section="article" data-ui-key="link">{{ ui.article.link }}</span> →</a>
     {%- endif %}
     {%- if page.prompt %}
     <br>
     <details style="margin-top: 0.5em; margin-left: 1em;">
-      <summary>View prompt</summary>
+      <summary lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="view_prompt">{{ ui.article.view_prompt }}</summary>
       <pre style="white-space: pre-wrap; background: #f4f4f4; padding: 0.75em; border-left: 3px solid #ccc; margin-top: 0.5em;">{{ page.prompt }}</pre>
     </details>
     {%- endif %}
@@ -42,7 +44,7 @@ layout: default
 
   {%- if page.toc %}
   <nav class="article-toc">
-    <h2>Contents</h2>
+    <h2 lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="contents">{{ ui.article.contents }}</h2>
     {{ page.toc | markdownify }}
   </nav>
   {%- endif %}
@@ -54,7 +56,7 @@ layout: default
   {%- if page.references.size > 0 %}
   <hr>
   <section class="references">
-    <h2>References</h2>
+    <h2 lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="references">{{ ui.article.references }}</h2>
     <ol>
       {%- for ref in page.references %}
       <li>
@@ -69,7 +71,7 @@ layout: default
   {%- if page.changelog.size > 0 %}
   <hr>
   <section class="changelog">
-    <h2>Changelog</h2>
+    <h2 lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="changelog">{{ ui.article.changelog }}</h2>
     <ul>
       {%- for entry in page.changelog %}
       <li><time>{{ entry.date }}</time> — {{ entry.note }}</li>

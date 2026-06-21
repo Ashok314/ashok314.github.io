@@ -2,9 +2,13 @@
 layout: home
 title: Films
 permalink: /films/
+ui_page: films
 ---
 
-*Watches & thoughts.*
+{% assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" %}
+{% assign ui = site.data.ui[interface_lang] | default: site.data.ui.en %}
+
+<p><em lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="films_tagline">{{ ui.pages.films_tagline }}</em></p>
 
 ---
 
@@ -14,4 +18,4 @@ Rating · Genre
 One-line reaction or theme.
 -->
 
-*Nothing here yet — check back soon.*
+<p><em lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="films_empty">{{ ui.pages.films_empty }}</em></p>

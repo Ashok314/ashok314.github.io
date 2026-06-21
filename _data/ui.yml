@@ -1,0 +1,271 @@
+en:
+  nav:
+    books.md: Books
+    films.md: Films
+    poems.md: Poems
+    tech.md: Tech
+    cooking.md: Cooking
+  header:
+    search: Search all content
+  footer:
+    display_name: Ashok Acharya
+    description: Software Engineer & Researcher. Programming Languages, Software Verification, Separation Logic. Based in Tokyo.
+    report_issue: Report an issue
+    issue_title: Issue on
+    issue_page: Page
+    issue_question: What went wrong?
+  pages:
+    books_title: Books
+    books_tagline: Reading notes & recommendations.
+    books_empty: Nothing here yet — check back soon.
+    films_title: Films
+    films_tagline: Watches & thoughts.
+    films_empty: Nothing here yet — check back soon.
+    tech_title: tech.log
+    tech_tagline: Articles, tutorials, opinions, and things worth writing down.
+    tech_cross_posted: Cross-posted on
+    cooking_title: Cooking
+    cooking_tagline: Recipes, experiments, and things worth eating.
+  search:
+    title: Search
+    label: Search pages, articles, recipes, and poems
+    placeholder: Type at least two characters
+    content_type: Content type
+    all: All content
+    pages: Pages
+    tech: Tech
+    recipes: Recipes
+    poems: Poems
+    free_writing: Free writing
+    regex: Use regular expression
+    result: "{count} result"
+    results: "{count} results"
+    invalid_regex: "Invalid regular expression:"
+    types:
+      page: Page
+      tech: Tech
+      recipe: Recipe
+      poem: Poem
+      free-writing: Free writing
+  article:
+    updated: Updated
+    min_read: min read
+    words: words
+    ai_generated: AI-generated content
+    ai_author_note: AI-generated · includes a note from the author
+    original_conversation: "Original conversation:"
+    link: link
+    view_prompt: View prompt
+    contents: Contents
+    references: References
+    changelog: Changelog
+  poems:
+    index: Index
+    poems: Poems
+    free_writing: Free Writing
+    about: About this page
+    backstory: Backstory
+
+ja:
+  nav:
+    books.md: 本
+    films.md: 映画
+    poems.md: 詩
+    tech.md: 技術
+    cooking.md: 料理
+  header:
+    search: サイト内検索
+  footer:
+    display_name: アチャリャ・アソック
+    description: ソフトウェアエンジニア・研究者。プログラミング言語、ソフトウェア検証、分離論理。東京を拠点に活動。
+    report_issue: 問題を報告
+    issue_title: ページの問題
+    issue_page: ページ
+    issue_question: 問題の内容を記入してください。
+  pages:
+    books_title: 本
+    books_tagline: 読書メモとおすすめ。
+    books_empty: まだ何もありません。もうしばらくお待ちください。
+    films_title: 映画
+    films_tagline: 観た作品と、その感想。
+    films_empty: まだ何もありません。もうしばらくお待ちください。
+    tech_title: 技術ログ
+    tech_tagline: 記事、チュートリアル、意見、そして書き留めておきたいこと。
+    tech_cross_posted: Hashnodeにも掲載
+    cooking_title: 料理
+    cooking_tagline: レシピ、実験、そして食べる価値のあるもの。
+  search:
+    title: 検索
+    label: ページ、技術記事、レシピ、詩を検索
+    placeholder: 2文字以上入力
+    content_type: 種類
+    all: すべて
+    pages: ページ
+    tech: 技術
+    recipes: レシピ
+    poems: 詩
+    free_writing: フリーライティング
+    regex: 正規表現を使用
+    result: "{count}件"
+    results: "{count}件"
+    invalid_regex: "正規表現が無効です:"
+    types:
+      page: ページ
+      tech: 技術
+      recipe: レシピ
+      poem: 詩
+      free-writing: フリーライティング
+  article:
+    updated: 更新
+    min_read: 分で読めます
+    words: 語
+    ai_generated: AI生成コンテンツ
+    ai_author_note: AI生成・著者の注記を含む
+    original_conversation: "元の会話:"
+    link: リンク
+    view_prompt: プロンプトを見る
+    contents: 目次
+    references: 参考文献
+    changelog: 変更履歴
+  poems:
+    index: 索引
+    poems: 詩
+    free_writing: フリーライティング
+    about: このページについて
+    backstory: 背景
+
+ne:
+  nav:
+    books.md: पुस्तक
+    films.md: चलचित्र
+    poems.md: कविता
+    tech.md: प्रविधि
+    cooking.md: पाककला
+  header:
+    search: साइटमा खोज्नुहोस्
+  footer:
+    display_name: अशोक आचार्य
+    description: सफ्टवेयर इन्जिनियर तथा अनुसन्धानकर्ता। प्रोग्रामिङ भाषा, सफ्टवेयर प्रमाणीकरण र सेपरेसन लजिक। टोकियोमा आधारित।
+    report_issue: समस्या रिपोर्ट गर्नुहोस्
+    issue_title: पृष्ठमा समस्या
+    issue_page: पृष्ठ
+    issue_question: समस्या के हो?
+  pages:
+    books_title: पुस्तकहरू
+    books_tagline: पढाइका टिपोट र सिफारिसहरू।
+    books_empty: यहाँ अहिलेसम्म केही छैन — चाँडै फेरि हेर्नुहोस्।
+    films_title: चलचित्रहरू
+    films_tagline: हेरेका चलचित्र र विचारहरू।
+    films_empty: यहाँ अहिलेसम्म केही छैन — चाँडै फेरि हेर्नुहोस्।
+    tech_title: प्रविधि लग
+    tech_tagline: लेख, ट्युटोरियल, विचार र लेखेर राख्न लायक कुराहरू।
+    tech_cross_posted: Hashnode मा पनि प्रकाशित
+    cooking_title: पाककला
+    cooking_tagline: रेसिपी, प्रयोग र खान लायक कुराहरू।
+  search:
+    title: खोज
+    label: पृष्ठ, प्राविधिक लेख, रेसिपी र कविता खोज्नुहोस्
+    placeholder: कम्तीमा दुई अक्षर लेख्नुहोस्
+    content_type: सामग्रीको प्रकार
+    all: सबै सामग्री
+    pages: पृष्ठहरू
+    tech: प्रविधि
+    recipes: रेसिपीहरू
+    poems: कविताहरू
+    free_writing: स्वतन्त्र लेखन
+    regex: रेगुलर एक्सप्रेसन प्रयोग गर्नुहोस्
+    result: "{count} नतिजा"
+    results: "{count} नतिजाहरू"
+    invalid_regex: "रेगुलर एक्सप्रेसन अमान्य छ:"
+    types:
+      page: पृष्ठ
+      tech: प्रविधि
+      recipe: रेसिपी
+      poem: कविता
+      free-writing: स्वतन्त्र लेखन
+  article:
+    updated: अद्यावधिक
+    min_read: मिनेटमा पढिन्छ
+    words: शब्द
+    ai_generated: AI-द्वारा सिर्जित सामग्री
+    ai_author_note: AI-द्वारा सिर्जित · लेखकको टिप्पणी समावेश
+    original_conversation: "मूल संवाद:"
+    link: लिङ्क
+    view_prompt: प्रम्प्ट हेर्नुहोस्
+    contents: विषयसूची
+    references: सन्दर्भहरू
+    changelog: परिवर्तन विवरण
+  poems:
+    index: अनुक्रमणिका
+    poems: कविताहरू
+    free_writing: स्वतन्त्र लेखन
+    about: यस पृष्ठबारे
+    backstory: पृष्ठभूमि
+
+hi:
+  nav:
+    books.md: पुस्तकें
+    films.md: फ़िल्में
+    poems.md: कविताएँ
+    tech.md: तकनीक
+    cooking.md: पाककला
+  header:
+    search: साइट पर खोजें
+  footer:
+    display_name: अशोक आचार्य
+    description: सॉफ्टवेयर इंजीनियर और शोधकर्ता। प्रोग्रामिंग भाषाएँ, सॉफ्टवेयर सत्यापन और सेपरेशन लॉजिक। टोक्यो में स्थित।
+    report_issue: समस्या की रिपोर्ट करें
+    issue_title: पृष्ठ पर समस्या
+    issue_page: पृष्ठ
+    issue_question: समस्या क्या है?
+  pages:
+    books_title: पुस्तकें
+    books_tagline: पढ़ने के नोट्स और सिफ़ारिशें।
+    books_empty: अभी यहाँ कुछ नहीं है — जल्द फिर देखें।
+    films_title: फ़िल्में
+    films_tagline: देखी हुई फ़िल्में और विचार।
+    films_empty: अभी यहाँ कुछ नहीं है — जल्द फिर देखें।
+    tech_title: तकनीक लॉग
+    tech_tagline: लेख, ट्यूटोरियल, विचार और लिखकर रखने योग्य बातें।
+    tech_cross_posted: Hashnode पर भी प्रकाशित
+    cooking_title: पाककला
+    cooking_tagline: रेसिपी, प्रयोग और खाने योग्य चीज़ें।
+  search:
+    title: खोज
+    label: पृष्ठ, तकनीकी लेख, रेसिपी और कविताएँ खोजें
+    placeholder: कम से कम दो अक्षर लिखें
+    content_type: सामग्री का प्रकार
+    all: सभी सामग्री
+    pages: पृष्ठ
+    tech: तकनीक
+    recipes: रेसिपी
+    poems: कविताएँ
+    free_writing: मुक्त लेखन
+    regex: रेगुलर एक्सप्रेशन का उपयोग करें
+    result: "{count} परिणाम"
+    results: "{count} परिणाम"
+    invalid_regex: "रेगुलर एक्सप्रेशन अमान्य है:"
+    types:
+      page: पृष्ठ
+      tech: तकनीक
+      recipe: रेसिपी
+      poem: कविता
+      free-writing: मुक्त लेखन
+  article:
+    updated: अपडेट किया गया
+    min_read: मिनट में पढ़ें
+    words: शब्द
+    ai_generated: AI द्वारा निर्मित सामग्री
+    ai_author_note: AI द्वारा निर्मित · लेखक की टिप्पणी शामिल
+    original_conversation: "मूल बातचीत:"
+    link: लिंक
+    view_prompt: प्रॉम्प्ट देखें
+    contents: विषय-सूची
+    references: संदर्भ
+    changelog: बदलावों का विवरण
+  poems:
+    index: अनुक्रमणिका
+    poems: कविताएँ
+    free_writing: मुक्त लेखन
+    about: इस पृष्ठ के बारे में
+    backstory: पृष्ठभूमि

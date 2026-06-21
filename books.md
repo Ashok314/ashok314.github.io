@@ -2,9 +2,13 @@
 layout: home
 title: Books
 permalink: /books/
+ui_page: books
 ---
 
-*Reading notes & recommendations.*
+{% assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" %}
+{% assign ui = site.data.ui[interface_lang] | default: site.data.ui.en %}
+
+<p><em lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="books_tagline">{{ ui.pages.books_tagline }}</em></p>
 
 ---
 
@@ -14,4 +18,4 @@ permalink: /books/
 One-line takeaway or note.
 -->
 
-*Nothing here yet — check back soon.*
+<p><em lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="books_empty">{{ ui.pages.books_empty }}</em></p>

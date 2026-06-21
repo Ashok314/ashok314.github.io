@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
+{% assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" %}
+{% assign ui = site.data.ui[interface_lang] | default: site.data.ui.en %}
 <article class="recipe">
   <header>
     <h1>{{ page.title }}</h1>
     <p class="recipe-meta">
       <time>{{ page.date | date: "%B %d, %Y" }}</time>
-      {%- if page.updated %} · <span>Updated: {{ page.updated }}</span>{% endif %}
+      {%- if page.updated %} · <span><span lang="{{ interface_lang }}" data-ui-section="article" data-ui-key="updated">{{ ui.article.updated }}</span>: {{ page.updated }}</span>{% endif %}
       {%- if page.tags.size > 0 %}
        · {% for tag in page.tags %}<span class="tag">#{{ tag }}</span> {% endfor %}
       {%- endif %}

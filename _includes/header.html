@@ -1,12 +1,14 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
+    {%- assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" -%}
+    {%- assign ui = site.data.ui[interface_lang] | default: site.data.ui.en -%}
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
-      <nav class="site-nav">
+      <nav class="site-nav" lang="{{ interface_lang }}">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -19,23 +21,135 @@
         <div class="trigger">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- assign nav_label = ui.nav[path] | default: my_page.title -%}
+            {%- if nav_label -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}" data-ui-section="nav" data-ui-key="{{ path }}">{{ nav_label | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
         </div>
       </nav>
     {%- endif -%}
 
-    <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
-      <label class="header-search-label" for="header-search-input">Search all content</label>
-      <input id="header-search-input" name="q" type="search" autocomplete="off">
-      <button type="submit" aria-label="Search">
-        <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true">
-          <circle cx="8.5" cy="8.5" r="5.75" fill="none" stroke="currentColor" stroke-width="1.5" />
-          <path d="M12.8 12.8L17 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-        </svg>
-      </button>
-    </form>
+    <div class="header-tools">
+      <div class="ui-language-switch" role="group" aria-label="Interface language">
+        <button type="button" data-ui-lang="ja" title="日本語">日</button>
+        <button type="button" data-ui-lang="en" title="English">EN</button>
+        <button type="button" data-ui-lang="ne" title="नेपाली">ने</button>
+        <button type="button" data-ui-lang="hi" title="हिन्दी">हि</button>
+      </div>
+
+      <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search" lang="{{ interface_lang }}">
+        <label class="header-search-label" for="header-search-input" data-ui-section="header" data-ui-key="search">{{ ui.header.search }}</label>
+        <input id="header-search-input" name="q" type="search" autocomplete="off">
+        <button type="submit" aria-label="{{ ui.header.search }}" data-ui-aria-section="header" data-ui-aria-key="search">
+          <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true">
+            <circle cx="8.5" cy="8.5" r="5.75" fill="none" stroke="currentColor" stroke-width="1.5" />
+            <path d="M12.8 12.8L17 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </form>
+    </div>
   </div>
 </header>
+
+<script id="ui-translations" type="application/json">{{ site.data.ui | jsonify }}</script>
+<script>
+  (() => {
+    const translations = JSON.parse(document.getElementById('ui-translations').textContent);
+    const supported = {{ site.supported_ui_langs | jsonify }};
+    const homeUrl = {{ '/' | relative_url | jsonify }};
+    const japaneseHomeUrl = {{ '/ja/' | relative_url | jsonify }};
+    const requested = new URLSearchParams(window.location.search).get('ui');
+    let stored = null;
+
+    try { stored = window.localStorage.getItem('ui_lang'); } catch (error) {}
+
+    let language = supported.includes(requested)
+      ? requested
+      : supported.includes(stored)
+        ? stored
+        : {{ site.ui_lang | default: 'ja' | jsonify }};
+
+    const strings = () => translations[language] || translations.en;
+
+    const matchingPath = (url) => new URL(url, window.location.origin).pathname;
+
+    const syncHomeLanguage = () => {
+      const path = window.location.pathname;
+      const homePath = matchingPath(homeUrl);
+      const japaneseHomePath = matchingPath(japaneseHomeUrl);
+
+      if (path === homePath && language === 'ja') {
+        window.location.replace(japaneseHomeUrl);
+        return true;
+      }
+
+      if (path === japaneseHomePath && language !== 'ja') {
+        window.location.replace(homeUrl);
+        return true;
+      }
+
+      return false;
+    };
+
+    const apply = () => {
+      const dictionary = strings();
+
+      document.querySelectorAll('[data-ui-section][data-ui-key]').forEach((element) => {
+        const value = dictionary[element.dataset.uiSection]?.[element.dataset.uiKey];
+        if (value) element.textContent = value;
+        element.lang = language;
+      });
+
+      document.querySelectorAll('[data-ui-placeholder-section][data-ui-placeholder-key]').forEach((element) => {
+        const value = dictionary[element.dataset.uiPlaceholderSection]?.[element.dataset.uiPlaceholderKey];
+        if (value) element.placeholder = value;
+      });
+
+      document.querySelectorAll('[data-ui-aria-section][data-ui-aria-key]').forEach((element) => {
+        const value = dictionary[element.dataset.uiAriaSection]?.[element.dataset.uiAriaKey];
+        if (value) element.setAttribute('aria-label', value);
+      });
+
+      document.querySelectorAll('[data-ui-lang]').forEach((button) => {
+        button.classList.toggle('active', button.dataset.uiLang === language);
+        button.setAttribute('aria-pressed', button.dataset.uiLang === language ? 'true' : 'false');
+      });
+
+      const localizedTitle = document.querySelector('[data-ui-document-title]');
+      if (localizedTitle) document.title = `${localizedTitle.textContent} | {{ site.title | escape }}`;
+
+      document.querySelectorAll('[data-ui-issue]').forEach((link) => {
+        const url = new URL(link.href);
+        url.searchParams.set('title', `${dictionary.footer.issue_title}: ${link.dataset.issueTitle}`);
+        url.searchParams.set('body', `${dictionary.footer.issue_page}: ${link.dataset.issueUrl}\n\n${dictionary.footer.issue_question}`);
+        link.href = url.toString();
+      });
+
+      if (document.querySelector('[data-ui-page]')) document.documentElement.lang = language;
+      window.dispatchEvent(new CustomEvent('ui-language-change', { detail: { language } }));
+    };
+
+    const select = (nextLanguage) => {
+      if (!supported.includes(nextLanguage)) return;
+      language = nextLanguage;
+      try { window.localStorage.setItem('ui_lang', language); } catch (error) {}
+      if (syncHomeLanguage()) return;
+      apply();
+    };
+
+    window.siteUI = { apply, select, strings, language: () => language };
+
+    document.querySelectorAll('[data-ui-lang]').forEach((button) => {
+      button.addEventListener('click', () => select(button.dataset.uiLang));
+    });
+
+    if (syncHomeLanguage()) return;
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', apply);
+    } else {
+      apply();
+    }
+  })();
+</script>

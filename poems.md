@@ -2,15 +2,18 @@
 layout: default
 title: Poems
 permalink: /poems/
+lang: mul
 ---
 
+{% assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" %}
+{% assign ui = site.data.ui[interface_lang] | default: site.data.ui.en %}
 {% assign published = site.poems | where: "published", true %}
 {% assign lang_order = "en,ne,ja" | split: "," %}
 
 <div class="poem-page">
 
 <details class="poem-toc">
-  <summary>Index</summary>
+  <summary lang="{{ interface_lang }}" data-ui-section="poems" data-ui-key="index">{{ ui.poems.index }}</summary>
   <ul>
     {% for lang in lang_order %}
     {% assign lang_items = published | where: "language", lang %}
@@ -20,13 +23,13 @@ permalink: /poems/
     {% assign toc_poems = lang_items | where: "type", "poem" %}
     {% assign toc_fw = lang_items | where: "type", "free-writing" %}
     {% if toc_poems.size > 0 %}
-    <span class="toc-type-label">Poems</span>
+    <span class="toc-type-label" lang="{{ interface_lang }}" data-ui-section="poems" data-ui-key="poems">{{ ui.poems.poems }}</span>
     {% for p in toc_poems %}
     <li><a href="#{{ p.slug }}">{{ p.title | default: "untitled" }}</a></li>
     {% endfor %}
     {% endif %}
     {% if toc_fw.size > 0 %}
-    <span class="toc-type-label">Free Writing</span>
+    <span class="toc-type-label" lang="{{ interface_lang }}" data-ui-section="poems" data-ui-key="free_writing">{{ ui.poems.free_writing }}</span>
     {% for p in toc_fw %}
     <li><a href="#{{ p.slug }}">{{ p.title | default: "untitled" }}</a></li>
     {% endfor %}
@@ -34,7 +37,7 @@ permalink: /poems/
     {% endif %}
     {% endfor %}
     <span class="toc-group-label" style="margin-top:0.8rem;">—</span>
-    <li><a href="#about">About this page</a></li>
+    <li><a href="#about" lang="{{ interface_lang }}" data-ui-section="poems" data-ui-key="about">{{ ui.poems.about }}</a></li>
   </ul>
 </details>
 
@@ -49,7 +52,7 @@ permalink: /poems/
 {% assign lang_fw    = lang_items | where: "type", "free-writing" | sort: "written_date" | reverse %}
 
 {% if lang_poems.size > 0 %}
-{% if lang_fw.size > 0 %}<span class="poem-type-sublabel">Poems</span>{% endif %}
+{% if lang_fw.size > 0 %}<span class="poem-type-sublabel" lang="{{ interface_lang }}" data-ui-section="poems" data-ui-key="poems">{{ ui.poems.poems }}</span>{% endif %}
 {% for poem in lang_poems %}
 <div class="poem-card lang-{{ lang }}" id="{{ poem.slug }}" data-lang="{{ lang }}">
   {% if poem.title and poem.title != "" %}<div class="poem-title">{{ poem.title }}</div>{% endif %}
@@ -62,7 +65,7 @@ permalink: /poems/
   {% endif %}
   {% if poem.backstory and poem.backstory != "" %}
   <details class="poem-backstory">
-    <summary><span aria-hidden="true">&#128214;</span> Backstory</summary>
+    <summary lang="{{ interface_lang }}"><span aria-hidden="true">&#128214;</span> <span data-ui-section="poems" data-ui-key="backstory">{{ ui.poems.backstory }}</span></summary>
     <div class="poem-backstory-page">{{ poem.backstory | markdownify }}</div>
   </details>
   {% endif %}
@@ -71,7 +74,7 @@ permalink: /poems/
 {% endif %}
 
 {% if lang_fw.size > 0 %}
-{% if lang_poems.size > 0 %}<span class="poem-type-sublabel">Free Writing</span>{% endif %}
+{% if lang_poems.size > 0 %}<span class="poem-type-sublabel" lang="{{ interface_lang }}" data-ui-section="poems" data-ui-key="free_writing">{{ ui.poems.free_writing }}</span>{% endif %}
 {% for piece in lang_fw %}
 <div class="poem-card lang-{{ lang }}" id="{{ piece.slug }}" data-lang="{{ lang }}">
   {% if piece.title and piece.title != "" %}<div class="poem-title">{{ piece.title }}</div>{% endif %}
@@ -84,7 +87,7 @@ permalink: /poems/
   {% endif %}
   {% if piece.backstory and piece.backstory != "" %}
   <details class="poem-backstory">
-    <summary><span aria-hidden="true">&#128214;</span> Backstory</summary>
+    <summary lang="{{ interface_lang }}"><span aria-hidden="true">&#128214;</span> <span data-ui-section="poems" data-ui-key="backstory">{{ ui.poems.backstory }}</span></summary>
     <div class="poem-backstory-page">{{ piece.backstory | markdownify }}</div>
   </details>
   {% endif %}

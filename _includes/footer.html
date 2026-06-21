@@ -2,6 +2,8 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
+    {%- assign interface_lang = page.ui_lang | default: site.ui_lang | default: "en" -%}
+    {%- assign ui = site.data.ui[interface_lang] | default: site.data.ui.en -%}
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
@@ -10,7 +12,7 @@
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
+              <span lang="{{ interface_lang }}" data-ui-section="footer" data-ui-key="display_name">{{ ui.footer.display_name }}</span>
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
@@ -19,11 +21,11 @@
           <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {%- endif -%}
           {%- assign issue_page_title = page.title | default: site.title -%}
-          {%- capture issue_title -%}Issue on {{ issue_page_title }}{%- endcapture -%}
-          {%- capture issue_body -%}Page: {{ page.url | absolute_url }}
+          {%- capture issue_title -%}{{ ui.footer.issue_title }}: {{ issue_page_title }}{%- endcapture -%}
+          {%- capture issue_body -%}{{ ui.footer.issue_page }}: {{ page.url | absolute_url }}
 
-What went wrong?{%- endcapture -%}
-          <li><a href="https://github.com/Ashok314/ashok314.github.io/issues/new?title={{ issue_title | uri_escape }}&amp;body={{ issue_body | uri_escape }}">Report an issue</a></li>
+{{ ui.footer.issue_question }}{%- endcapture -%}
+          <li><a lang="{{ interface_lang }}" href="https://github.com/Ashok314/ashok314.github.io/issues/new?title={{ issue_title | uri_escape }}&amp;body={{ issue_body | uri_escape }}" data-ui-section="footer" data-ui-key="report_issue" data-ui-issue data-issue-title="{{ issue_page_title | escape }}" data-issue-url="{{ page.url | absolute_url }}">{{ ui.footer.report_issue }}</a></li>
         </ul>
       </div>
 
@@ -32,7 +34,7 @@ What went wrong?{%- endcapture -%}
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <p lang="{{ interface_lang }}" data-ui-section="footer" data-ui-key="description">{{ ui.footer.description }}</p>
       </div>
     </div>
 

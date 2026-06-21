@@ -20,11 +20,13 @@ This file is mandatory policy for agents changing this repository. Read `DEV.md`
 
 - `_config.yml` controls navigation, collections, defaults, and site metadata.
 - Keep `title: ashok314`; the human name belongs in `author`.
+- `lang` describes page content. Fixed UI strings come from `_data/ui.yml`; the header switch changes `ui_lang` client-side and remembers the choice. Japanese is the default and English is the fallback.
+- Centralize fixed page titles, taglines, empty states, and footer copy in `_data/ui.yml`; do not duplicate them across page files.
 - `_tech/` and `_cooking/` are output collections using layout defaults from `_config.yml`.
 - `_poems/` is not output directly; `poems.md` renders published entries at `/poems/`.
 - Listing pages are generated from collections. Do not add collection entries manually.
 - `_includes/head.html`, `_includes/header.html`, and `_includes/footer.html` override Minima.
-- The header provides global search. `search.md` indexes pages, tech, recipes, and published poems, with plain filters and separate regex mode.
+- The header provides global search. `search.md` indexes pages, tech, recipes, and published poems, with type, language, date, and separate regex filtering.
 - The footer's “Report an issue” link must retain the current page URL.
 - `assets/logo_1.gif` is the favicon.
 
@@ -46,3 +48,4 @@ This file is mandatory policy for agents changing this repository. Read `DEV.md`
 - In poems, source newlines create line breaks; do not add trailing `\`. Blank lines separate stanzas.
 - Poem backstories use a multiline `backstory: |` front-matter field.
 - Keep factual profile updates synchronized between `index.md` and `ja.md` only when the task calls for both languages.
+- Keep content in its authored language. Do not generate translations. Poems always remain in their original language.

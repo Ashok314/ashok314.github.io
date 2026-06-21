@@ -2,7 +2,7 @@
 layout: home
 ---
 
-*Software Engineer & Researcher — Tokyo, Japan (Currently: Osaka)*  [日本語](/ja/)
+*Software Engineer & Researcher — Tokyo, Japan (Currently: Osaka)*
 
 ---
 
