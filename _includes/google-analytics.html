@@ -1,0 +1,14 @@
+<script>
+  if (!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+
+    const googleTag = document.createElement("script");
+    googleTag.async = true;
+    googleTag.src = "https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}";
+    document.head.appendChild(googleTag);
+
+    gtag("js", new Date());
+    gtag("config", "{{ site.google_analytics }}");
+  }
+</script>

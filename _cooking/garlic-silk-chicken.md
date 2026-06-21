@@ -7,7 +7,7 @@ tags: [chicken, garlic, pan-braised, quick]
 image: /assets/cooking/garlic-silk-chicken.jpg
 ---
 
-### ✍️ The Story
+## ✍️ The Story
 
 Some dishes aren't planned — they just happen.
 
@@ -19,13 +19,10 @@ It ended up tasting like comfort itself — gentle garlic, soft sweetness, and t
 
 I call it *Garlic Silk Chicken* — because the flavor slides across your tongue like silk, and because simplicity can be its own luxury.
 
----
+##  🍳 Recipe
 
-### 🍳 Recipe
+### **Ingredients**
 
-**Ingredients**
-
-| | |
 |---|---|
 | Chicken legs | 8 small pieces, with visible fat |
 | Garlic | 5–6 cloves, crushed |
@@ -39,7 +36,7 @@ I call it *Garlic Silk Chicken* — because the flavor slides across your tongue
 | Full-fat milk | ½ to ¾ cup |
 | Jimbu *(optional)* | a pinch, for aroma |
 
-**Method**
+### **Method**
 
 1. Place the chicken pieces directly in a cold frying pan. Add a touch of oil.
 2. Scatter in garlic, the whole red chilli, salt, cumin, mustard, and jimbu if using.

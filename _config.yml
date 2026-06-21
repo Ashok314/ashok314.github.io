@@ -7,6 +7,7 @@ description: >-
   Separation Logic. Based in Tokyo.
 
 url: "https://ashok314.github.io"
+google_analytics: "G-9X7E2PB8WH"
 
 minima:
   skin: classic
@@ -25,6 +26,8 @@ social_links:
 
 exclude:
   - DEV.md
+  - .agents/AGENTS.md
+  - .agents/TODO.md
   - Gemfile
   - Gemfile.lock
 

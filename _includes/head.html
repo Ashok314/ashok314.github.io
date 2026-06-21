@@ -4,9 +4,273 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="icon" href="{{ "/assets/logo_1.gif" | relative_url }}" type="image/gif">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
+  {%- endif -%}
+  <style>
+    .header-search {
+      clear: both;
+      display: flex;
+      width: min(220px, 100%);
+      margin-left: auto;
+      padding: 0 0 0.4rem;
+    }
+
+    .header-search-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    .header-search input {
+      box-sizing: border-box;
+      min-width: 0;
+      flex: 1;
+      padding: 0.2rem 0.25rem;
+      border: 0;
+      border-bottom: 1px solid #cfcfcf;
+      border-radius: 0;
+      outline: none;
+      background: transparent;
+      font: inherit;
+      font-size: 0.8rem;
+    }
+
+    .header-search input:focus {
+      border-bottom-color: #777;
+    }
+
+    .header-search button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.8rem;
+      padding: 0;
+      border: 0;
+      border-bottom: 1px solid #cfcfcf;
+      border-radius: 0;
+      background: transparent;
+      color: #777;
+      cursor: pointer;
+    }
+
+    .header-search button:hover,
+    .header-search button:focus-visible {
+      color: #222;
+    }
+  </style>
+  {%- if page.collection == 'tech' or page.url == '/tech/' -%}
+  <style>
+    .tech-article,
+    .home {
+      max-width: 760px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .tech-article {
+      color: #242424;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .tech-article > header {
+      margin-bottom: 2rem;
+      padding: 1.4rem 0 1.2rem;
+      border-top: 4px double #2d2d2d;
+      border-bottom: 1px solid #2d2d2d;
+      text-align: center;
+    }
+
+    .tech-article > header h1,
+    .home .page-heading {
+      margin-bottom: 0.55rem;
+      color: #171717;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.08;
+    }
+
+    .tech-article > header h1 {
+      font-size: 2.65rem;
+    }
+
+    .article-meta {
+      margin: 0.8rem 0 0;
+      color: #666;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.055em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .article-reading {
+      float: right;
+    }
+
+    .article-tagline {
+      margin: 0.85rem auto 0;
+      max-width: 620px;
+      color: #4a4a4a;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .article-body {
+      font-size: 1.06rem;
+      line-height: 1.78;
+    }
+
+    .article-body > p:first-child::first-letter {
+      float: left;
+      margin: 0.08em 0.09em 0 0;
+      color: #171717;
+      font-size: 3.6em;
+      font-weight: 700;
+      line-height: 0.82;
+    }
+
+    .tech-article h1,
+    .tech-article h2,
+    .tech-article h3 {
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .article-body h1,
+    .article-body h2 {
+      padding-bottom: 0.28rem;
+      border-bottom: 1px solid #b9b9b9;
+      line-height: 1.2;
+    }
+
+    .tech-article blockquote {
+      color: #4d4d4d;
+      border-left-color: #777;
+      font-style: italic;
+    }
+
+    .home .page-heading {
+      margin: 0;
+      padding: 1rem 0;
+      border-top: 4px double #2d2d2d;
+      border-bottom: 4px double #2d2d2d;
+      font-size: 2.8rem;
+      text-align: center;
+    }
+
+    .home > p,
+    .home > hr {
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .home > hr {
+      border-top: 1px solid #777;
+    }
+
+    @media screen and (max-width: 600px) {
+      .tech-article > header h1,
+      .home .page-heading {
+        font-size: 2rem;
+      }
+
+      .article-reading {
+        display: block;
+        float: none;
+        margin-top: 0.35rem;
+      }
+
+      .article-body {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  {%- endif -%}
+  {%- if page.url == '/search/' -%}
+  <style>
+    .site-search label {
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+
+    .site-search input[type="search"] {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0.7rem 0.8rem;
+      border: 1px solid #bdbdbd;
+      border-radius: 3px;
+      background: #fff;
+      font: inherit;
+    }
+
+    .search-options {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: 0.8rem 1.2rem;
+      margin-top: 0.8rem;
+    }
+
+    .search-options label {
+      margin: 0;
+    }
+
+    .search-options select {
+      display: block;
+      margin-top: 0.3rem;
+      padding: 0.35rem 0.5rem;
+      border: 1px solid #bdbdbd;
+      border-radius: 3px;
+      background: #fff;
+      font: inherit;
+    }
+
+    .search-regex {
+      padding-bottom: 0.35rem;
+    }
+
+    .search-summary {
+      min-height: 1.5em;
+      margin: 0.8rem 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .search-help {
+      margin: 0.75rem 0 0;
+      color: #777;
+      font-size: 0.78rem;
+      line-height: 1.7;
+    }
+
+    .search-results {
+      margin-left: 0;
+      list-style: none;
+    }
+
+    .search-results li {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .search-result-type {
+      color: #777;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .search-results p {
+      margin: 0.3rem 0 0;
+      color: #555;
+    }
+  </style>
   {%- endif -%}
   {%- if page.url contains 'poems' -%}
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,9 +358,67 @@
       color: #3a2e20;
     }
 
+    /* Optional backstory — a small book opening onto an inset page */
+    details.poem-backstory {
+      margin-top: 0.35rem;
+      text-align: right;
+    }
+
+    details.poem-backstory summary {
+      cursor: pointer;
+      list-style: none;
+      color: #8a6040;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.18s ease;
+    }
+
+    details.poem-backstory summary::-webkit-details-marker { display: none; }
+
+    details.poem-backstory summary:hover,
+    details.poem-backstory summary:focus-visible {
+      color: #5a3e28;
+    }
+
+    .poem-backstory-page {
+      margin: 0.65rem 0 0;
+      padding: 1rem 1.1rem 0.8rem 1.25rem;
+      border-left: 2px solid rgba(122, 90, 58, 0.28);
+      background: rgba(255, 250, 235, 0.32);
+      box-shadow: inset 8px 0 12px rgba(90, 62, 40, 0.05);
+      color: #6f5942;
+      font-family: 'Kalam', cursive;
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      line-height: 1.75;
+      text-align: left;
+      text-transform: none;
+      transform-origin: left center;
+      animation: poem-page-open 0.22s ease-out;
+    }
+
+    .poem-backstory-page p:last-child {
+      margin-bottom: 0;
+    }
+
+    @keyframes poem-page-open {
+      from { opacity: 0; transform: perspective(500px) rotateY(-8deg); }
+      to { opacity: 1; transform: perspective(500px) rotateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .poem-backstory-page { animation: none; }
+      details.poem-backstory summary { transition: none; }
+    }
+
     /* Stanza break: blank line = <p> — full gap between stanzas */
     .poem-card .poem-body p {
       margin-bottom: 1.4em;
+      white-space: pre-line;
     }
 
     .poem-card .poem-body p:last-child {

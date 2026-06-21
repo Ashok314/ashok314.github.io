@@ -60,6 +60,12 @@ permalink: /poems/
     {% if poem.written_place %}{{ poem.written_place }}{% endif %}{% if poem.written_place and poem.written_date %} &middot; {% endif %}{% if poem.written_date %}{{ poem.written_date | date: "%B %Y" }}{% endif %}
   </div>
   {% endif %}
+  {% if poem.backstory and poem.backstory != "" %}
+  <details class="poem-backstory">
+    <summary><span aria-hidden="true">&#128214;</span> Backstory</summary>
+    <div class="poem-backstory-page">{{ poem.backstory | markdownify }}</div>
+  </details>
+  {% endif %}
 </div>
 {% endfor %}
 {% endif %}
@@ -75,6 +81,12 @@ permalink: /poems/
   <div class="poem-meta">
     {% if piece.written_place %}{{ piece.written_place }}{% endif %}{% if piece.written_place and piece.written_date %} &middot; {% endif %}{% if piece.written_date %}{{ piece.written_date | date: "%B %Y" }}{% endif %}
   </div>
+  {% endif %}
+  {% if piece.backstory and piece.backstory != "" %}
+  <details class="poem-backstory">
+    <summary><span aria-hidden="true">&#128214;</span> Backstory</summary>
+    <div class="poem-backstory-page">{{ piece.backstory | markdownify }}</div>
+  </details>
   {% endif %}
 </div>
 {% endfor %}

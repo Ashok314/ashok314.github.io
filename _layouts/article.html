@@ -14,7 +14,7 @@ layout: default
       &nbsp;&nbsp;
       {% assign words = content | number_of_words %}
       {% assign minutes = words | divided_by: 200 | plus: 1 %}
-      <span style="float:right;">&#128338; {{ minutes }} min read · {{ words }} words</span>
+      <span class="article-reading">&#128338; {{ minutes }} min read · {{ words }} words</span>
     </p>
 
     {%- if page.tagline %}<p class="article-tagline"><em>{{ page.tagline }}</em></p>{% endif %}
@@ -47,7 +47,9 @@ layout: default
   </nav>
   {%- endif %}
 
-  {{ content }}
+  <div class="article-body">
+    {{ content }}
+  </div>
 
   {%- if page.references.size > 0 %}
   <hr>

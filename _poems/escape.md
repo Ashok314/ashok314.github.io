@@ -7,9 +7,9 @@ language: en
 published: true
 ---
 
-i tried to walkaway\
-from the boundaries you've made\
-every step i take in the lights\
-was returned as the shade\
-finally i escaped away\
+i tried to walkaway
+from the boundaries you've made
+every step i take in the lights
+was returned as the shade
+finally i escaped away
 but couldn't erase my head
