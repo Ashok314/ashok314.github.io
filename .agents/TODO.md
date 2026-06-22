@@ -1,4 +1,3 @@
 # TODO
 
-- [x] Add a readable newspaper style to the tech blog.
-- [x] Make all site content searchable.
+- [ ] Pi Snake — browser-based classic Snake where the snake eats digits of pi in sequence and grows; pure JavaScript, responsive canvas, keyboard and mobile swipe controls.

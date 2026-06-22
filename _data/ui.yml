@@ -5,6 +5,7 @@ en:
     poems.md: Poems
     tech.md: Tech
     cooking.md: Cooking
+    tools.md: Tools
   header:
     search: Search all content
   theme:
@@ -13,6 +14,7 @@ en:
     dark: Dark
     grey: Grey
     neo: Neo
+    matrix: Matrix
     contrast: High contrast
   footer:
     display_name: Ashok Acharya
@@ -33,6 +35,34 @@ en:
     tech_cross_posted: Cross-posted on
     cooking_title: Cooking
     cooking_tagline: Recipes, experiments, and things worth eating.
+    tools_title: Tools
+    tools_tagline: Small tools that run in your browser.
+    pi_portrait_title: Pi Portrait
+    pi_portrait_tagline: Turn a portrait into an SVG composed entirely of pi digits. Everything runs in your browser; your image is never uploaded.
+  pi_tool:
+    sample: Sample image
+    use_sample: Load sample
+    choose_image: Choose image
+    no_image: No image selected
+    frame: Frame
+    horizontal: Horizontal
+    vertical: Vertical
+    zoom: Zoom
+    detail: Detail
+    digits_12721: 12,721 digits
+    digits_31415: 31,415 digits
+    digits_100000: 100,000 digits
+    palette: Palette
+    normal: Normal
+    black_white: Black & white
+    custom: Custom
+    background: Background
+    digit_color: Digits
+    generate: Generate portrait
+    download_svg: Download SVG
+    download_png: Download PNG
+    generating: "Generating {count} digits…"
+    ready: Ready.
   search:
     title: Search
     label: Search pages, articles, recipes, and poems
@@ -80,6 +110,7 @@ ja:
     poems.md: 詩
     tech.md: 技術
     cooking.md: 料理
+    tools.md: ツール
   header:
     search: サイト内検索
   theme:
@@ -88,6 +119,7 @@ ja:
     dark: ダーク
     grey: グレー
     neo: ネオ
+    matrix: マトリックス
     contrast: ハイコントラスト
   footer:
     display_name: アチャリャ・アソック
@@ -108,6 +140,34 @@ ja:
     tech_cross_posted: Hashnodeにも掲載
     cooking_title: 料理
     cooking_tagline: レシピ、実験、そして食べる価値のあるもの。
+    tools_title: ツール
+    tools_tagline: ブラウザで使える小さなツール。
+    pi_portrait_title: 円周率ポートレート
+    pi_portrait_tagline: 写真を円周率の数字だけで構成されたSVGに変換します。処理はすべてブラウザ内で行われ、画像はアップロードされません。
+  pi_tool:
+    sample: サンプル画像
+    use_sample: サンプルを読み込む
+    choose_image: 画像を選択
+    no_image: 画像が選択されていません
+    frame: フレーム調整
+    horizontal: 水平
+    vertical: 垂直
+    zoom: ズーム
+    detail: 精細度
+    digits_12721: 12,721桁
+    digits_31415: 31,415桁
+    digits_100000: 100,000桁
+    palette: パレット
+    normal: ノーマル
+    black_white: 白黒
+    custom: カスタム
+    background: 背景
+    digit_color: 数字
+    generate: ポートレートを生成
+    download_svg: SVGをダウンロード
+    download_png: PNGをダウンロード
+    generating: "{count}桁で生成中…"
+    ready: 完成しました。
   search:
     title: 検索
     label: ページ、技術記事、レシピ、詩を検索
@@ -155,6 +215,7 @@ ne:
     poems.md: कविता
     tech.md: प्रविधि
     cooking.md: पाककला
+    tools.md: उपकरण
   header:
     search: साइटमा खोज्नुहोस्
   theme:
@@ -163,6 +224,7 @@ ne:
     dark: अँध्यारो
     grey: खैरो
     neo: नियो
+    matrix: म्याट्रिक्स
     contrast: उच्च कन्ट्रास्ट
   footer:
     display_name: अशोक आचार्य
@@ -183,6 +245,34 @@ ne:
     tech_cross_posted: Hashnode मा पनि प्रकाशित
     cooking_title: पाककला
     cooking_tagline: रेसिपी, प्रयोग र खान लायक कुराहरू।
+    tools_title: उपकरणहरू
+    tools_tagline: ब्राउजरमै चल्ने साना उपकरणहरू।
+    pi_portrait_title: पाई पोर्ट्रेट
+    pi_portrait_tagline: तस्बिरलाई पाईका अंकहरूबाट बनेको SVG मा बदल्नुहोस्। सबै प्रक्रिया ब्राउजरमै हुन्छ; तस्बिर अपलोड हुँदैन।
+  pi_tool:
+    sample: नमुना तस्बिर
+    use_sample: नमुना लोड गर्नुहोस्
+    choose_image: तस्बिर छान्नुहोस्
+    no_image: कुनै तस्बिर चयन गरिएको छैन
+    frame: फ्रेम
+    horizontal: तेर्सो
+    vertical: ठाडो
+    zoom: जुम
+    detail: विवरण
+    digits_12721: 12,721 अंक
+    digits_31415: 31,415 अंक
+    digits_100000: 100,000 अंक
+    palette: रङ
+    normal: सामान्य
+    black_white: कालो र सेतो
+    custom: आफूअनुकूल
+    background: पृष्ठभूमि
+    digit_color: अंकहरू
+    generate: पोर्ट्रेट बनाउनुहोस्
+    download_svg: SVG डाउनलोड गर्नुहोस्
+    download_png: PNG डाउनलोड गर्नुहोस्
+    generating: "{count} अंक बनाउँदै…"
+    ready: तयार छ।
   search:
     title: खोज
     label: पृष्ठ, प्राविधिक लेख, रेसिपी र कविता खोज्नुहोस्
@@ -230,6 +320,7 @@ hi:
     poems.md: कविताएँ
     tech.md: तकनीक
     cooking.md: पाककला
+    tools.md: उपकरण
   header:
     search: साइट पर खोजें
   theme:
@@ -238,6 +329,7 @@ hi:
     dark: गहरा
     grey: धूसर
     neo: नियो
+    matrix: मैट्रिक्स
     contrast: उच्च कंट्रास्ट
   footer:
     display_name: अशोक आचार्य
@@ -258,6 +350,34 @@ hi:
     tech_cross_posted: Hashnode पर भी प्रकाशित
     cooking_title: पाककला
     cooking_tagline: रेसिपी, प्रयोग और खाने योग्य चीज़ें।
+    tools_title: उपकरण
+    tools_tagline: ब्राउज़र में चलने वाले छोटे उपकरण।
+    pi_portrait_title: पाई पोर्ट्रेट
+    pi_portrait_tagline: तस्वीर को केवल पाई के अंकों से बने SVG में बदलें। पूरी प्रक्रिया ब्राउज़र में होती है; तस्वीर अपलोड नहीं होती।
+  pi_tool:
+    sample: नमूना तस्वीर
+    use_sample: नमूना लोड करें
+    choose_image: तस्वीर चुनें
+    no_image: कोई तस्वीर नहीं चुनी गई
+    frame: फ़्रेम
+    horizontal: क्षैतिज
+    vertical: लंबवत
+    zoom: ज़ूम
+    detail: विवरण
+    digits_12721: 12,721 अंक
+    digits_31415: 31,415 अंक
+    digits_100000: 100,000 अंक
+    palette: रंग
+    normal: सामान्य
+    black_white: श्वेत-श्याम
+    custom: कस्टम
+    background: पृष्ठभूमि
+    digit_color: अंक
+    generate: पोर्ट्रेट बनाएँ
+    download_svg: SVG डाउनलोड करें
+    download_png: PNG डाउनलोड करें
+    generating: "{count} अंकों से बनाया जा रहा है…"
+    ready: तैयार है।
   search:
     title: खोज
     label: पृष्ठ, तकनीकी लेख, रेसिपी और कविताएँ खोजें
@@ -305,6 +425,7 @@ kn:
     poems.md: ಕವಿತೆಗಳು
     tech.md: ತಂತ್ರಜ್ಞಾನ
     cooking.md: ಅಡುಗೆ
+    tools.md: ಉಪಕರಣಗಳು
   header:
     search: ತಾಣದಲ್ಲಿ ಹುಡುಕಿ
   theme:
@@ -313,6 +434,7 @@ kn:
     dark: ಕತ್ತಲೆ
     grey: ಬೂದು
     neo: ನಿಯೋ
+    matrix: ಮ್ಯಾಟ್ರಿಕ್ಸ್
     contrast: ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್
   footer:
     display_name: ಅಶೋಕ್ ಆಚಾರ್ಯ
@@ -333,6 +455,34 @@ kn:
     tech_cross_posted: Hashnode ನಲ್ಲಿಯೂ ಪ್ರಕಟಿಸಲಾಗಿದೆ
     cooking_title: ಅಡುಗೆ
     cooking_tagline: ಪಾಕವಿಧಾನಗಳು, ಪ್ರಯೋಗಗಳು ಮತ್ತು ತಿನ್ನಲು ಯೋಗ್ಯವಾದವು.
+    tools_title: ಉಪಕರಣಗಳು
+    tools_tagline: ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಸಣ್ಣ ಉಪಕರಣಗಳು.
+    pi_portrait_title: ಪೈ ಪೋರ್ಟ್ರೇಟ್
+    pi_portrait_tagline: ಚಿತ್ರವನ್ನು ಪೈ ಅಂಕೆಗಳಿಂದ ನಿರ್ಮಿಸಿದ SVG ಆಗಿ ಪರಿವರ್ತಿಸಿ. ಎಲ್ಲ ಪ್ರಕ್ರಿಯೆಯೂ ಬ್ರೌಸರ್‌ನಲ್ಲೇ ನಡೆಯುತ್ತದೆ; ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡುವುದಿಲ್ಲ.
+  pi_tool:
+    sample: ಮಾದರಿ ಚಿತ್ರ
+    use_sample: ಮಾದರಿಯನ್ನು ಲೋಡ್ ಮಾಡಿ
+    choose_image: ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ
+    no_image: ಯಾವುದೇ ಚಿತ್ರವನ್ನು ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ
+    frame: ಚೌಕಟ್ಟು
+    horizontal: ಅಡ್ಡ
+    vertical: ಲಂಬ
+    zoom: ಜೂಮ್
+    detail: ವಿವರ
+    digits_12721: 12,721 ಅಂಕೆಗಳು
+    digits_31415: 31,415 ಅಂಕೆಗಳು
+    digits_100000: 100,000 ಅಂಕೆಗಳು
+    palette: ಬಣ್ಣ
+    normal: ಸಾಮಾನ್ಯ
+    black_white: ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ
+    custom: ಸ್ವಂತ
+    background: ಹಿನ್ನೆಲೆ
+    digit_color: ಅಂಕೆಗಳು
+    generate: ಪೋರ್ಟ್ರೇಟ್ ರಚಿಸಿ
+    download_svg: SVG ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
+    download_png: PNG ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
+    generating: "{count} ಅಂಕೆಗಳಿಂದ ರಚಿಸಲಾಗುತ್ತಿದೆ…"
+    ready: ಸಿದ್ಧವಾಗಿದೆ.
   search:
     title: ಹುಡುಕಾಟ
     label: ಪುಟಗಳು, ತಾಂತ್ರಿಕ ಲೇಖನಗಳು, ಪಾಕವಿಧಾನಗಳು ಮತ್ತು ಕವಿತೆಗಳನ್ನು ಹುಡುಕಿ

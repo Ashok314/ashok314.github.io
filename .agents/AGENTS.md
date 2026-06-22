@@ -1,6 +1,6 @@
 # ashok314.github.io — Agent Policy
 
-This file is mandatory policy for agents changing this repository. Read `DEV.md` for the stack, commands, structure, and content workflows. `TODO.md` contains ideas only; it does not authorize implementation.
+This file is mandatory policy for agents changing this repository. Read `DEV.md` for the stack, commands, structure, and content workflows.
 
 ## Rules
 
@@ -27,9 +27,10 @@ This file is mandatory policy for agents changing this repository. Read `DEV.md`
 - Listing pages are generated from collections. Do not add collection entries manually.
 - `_includes/head.html`, `_includes/header.html`, and `_includes/footer.html` override Minima.
 - The header provides global search. `search.md` indexes pages, tech, recipes, and published poems, with type, language, date, and separate regex filtering.
-- The header theme switch provides light, dark, grey, Neo, and high-contrast modes and remembers the visitor's choice.
+- The header theme switch provides light, dark, grey, Neo, Matrix, and high-contrast modes and remembers the visitor's choice.
 - The footer's “Report an issue” link must retain the current page URL.
 - `_scripts/generate_logo.rb` generates `assets/logo.svg` and `assets/favicon.svg`; the PNG icons are fallbacks. Keep the original `assets/logo_1.gif` unchanged.
+- `/pi-portrait/` is a client-side portrait-to-pi-digits SVG/PNG tool. Its browser code is `assets/js/pi-portrait.js`; `assets/pi-digits.txt` is the shared digit source and `assets/avatar-original.jpg` is the sample input.
 
 ## Visual policy
 

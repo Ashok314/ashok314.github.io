@@ -6,7 +6,7 @@
     (() => {
       try {
         const savedTheme = window.localStorage.getItem('color_theme');
-        const theme = ['light', 'dark', 'grey', 'neo', 'contrast'].includes(savedTheme)
+        const theme = ['light', 'dark', 'grey', 'neo', 'matrix', 'contrast'].includes(savedTheme)
           ? savedTheme
           : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         document.documentElement.dataset.theme = theme;
@@ -122,6 +122,7 @@
     .theme-swatch-dark { background: #222; }
     .theme-swatch-grey { background: #aaa; }
     .theme-swatch-neo { background: linear-gradient(135deg, #58f3ff 50%, #ff55d6 50%); }
+    .theme-swatch-matrix { background: linear-gradient(135deg, #000 50%, #20c65a 50%); }
     .theme-swatch-contrast { background: linear-gradient(90deg, #000 50%, #fff 50%); }
 
     [lang="ja"] {
@@ -806,11 +807,22 @@
       color-scheme: dark;
       --theme-bg: #0b1020;
       --theme-surface: #141c31;
-      --theme-text: #e8f7ff;
-      --theme-muted: #9db2c7;
+      --theme-text: #ff72d2;
+      --theme-muted: #d99ac7;
       --theme-border: #315d70;
       --theme-link: #58e7f0;
       --theme-code: #211936;
+    }
+
+    html[data-theme="matrix"] {
+      color-scheme: dark;
+      --theme-bg: #000;
+      --theme-surface: #061307;
+      --theme-text: #20c65a;
+      --theme-muted: #68a978;
+      --theme-border: #175f2b;
+      --theme-link: #72f59a;
+      --theme-code: #071b0b;
     }
 
     html[data-theme="contrast"] {
@@ -898,6 +910,7 @@
     html[data-theme="dark"] .tech-article,
     html[data-theme="grey"] .tech-article,
     html[data-theme="neo"] .tech-article,
+    html[data-theme="matrix"] .tech-article,
     html[data-theme="contrast"] .tech-article {
       color: var(--theme-text);
     }
@@ -908,6 +921,8 @@
     html[data-theme="grey"] .home .page-heading,
     html[data-theme="neo"] .tech-article > header,
     html[data-theme="neo"] .home .page-heading,
+    html[data-theme="matrix"] .tech-article > header,
+    html[data-theme="matrix"] .home .page-heading,
     html[data-theme="contrast"] .tech-article > header,
     html[data-theme="contrast"] .home .page-heading,
     html[data-theme="dark"] .article-body h1,
@@ -916,6 +931,8 @@
     html[data-theme="grey"] .article-body h2,
     html[data-theme="neo"] .article-body h1,
     html[data-theme="neo"] .article-body h2,
+    html[data-theme="matrix"] .article-body h1,
+    html[data-theme="matrix"] .article-body h2,
     html[data-theme="contrast"] .article-body h1,
     html[data-theme="contrast"] .article-body h2 {
       border-color: var(--theme-border);
@@ -930,6 +947,9 @@
     html[data-theme="neo"] .tech-article > header h1,
     html[data-theme="neo"] .home .page-heading,
     html[data-theme="neo"] .article-body > p:first-child::first-letter,
+    html[data-theme="matrix"] .tech-article > header h1,
+    html[data-theme="matrix"] .home .page-heading,
+    html[data-theme="matrix"] .article-body > p:first-child::first-letter,
     html[data-theme="contrast"] .tech-article > header h1,
     html[data-theme="contrast"] .home .page-heading,
     html[data-theme="contrast"] .article-body > p:first-child::first-letter {
@@ -943,6 +963,11 @@
 
     html[data-theme="neo"] :focus-visible {
       outline: 2px solid #58e7f0;
+      outline-offset: 3px;
+    }
+
+    html[data-theme="matrix"] :focus-visible {
+      outline: 2px solid #72f59a;
       outline-offset: 3px;
     }
 
