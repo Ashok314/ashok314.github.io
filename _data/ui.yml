@@ -39,6 +39,8 @@ en:
     tools_tagline: Small tools that run in your browser.
     pi_portrait_title: Pi Portrait
     pi_portrait_tagline: Turn a portrait into an SVG composed entirely of pi digits. Everything runs in your browser; your image is never uploaded.
+    pi_snake_title: Pi Snake
+    pi_snake_tagline: Eat the digits of pi in sequence and grow.
   pi_tool:
     sample: Sample image
     use_sample: Load sample
@@ -63,6 +65,21 @@ en:
     download_png: Download PNG
     generating: "Generating {count} digits…"
     ready: Ready.
+  pi_snake:
+    score: Score
+    best: Best
+    sequence: Sequence
+    start: Start
+    restart: Restart
+    pause: Pause
+    resume: Resume
+    ready: Use arrows, WASD, swipe, or the direction pad.
+    paused: Paused.
+    game_over: Game over.
+    up: Up
+    down: Down
+    left: Left
+    right: Right
   search:
     title: Search
     label: Search pages, articles, recipes, and poems
@@ -144,6 +161,8 @@ ja:
     tools_tagline: ブラウザで使える小さなツール。
     pi_portrait_title: 円周率ポートレート
     pi_portrait_tagline: 写真を円周率の数字だけで構成されたSVGに変換します。処理はすべてブラウザ内で行われ、画像はアップロードされません。
+    pi_snake_title: 円周率スネーク
+    pi_snake_tagline: 円周率の数字を順番に食べて成長します。
   pi_tool:
     sample: サンプル画像
     use_sample: サンプルを読み込む
@@ -168,6 +187,21 @@ ja:
     download_png: PNGをダウンロード
     generating: "{count}桁で生成中…"
     ready: 完成しました。
+  pi_snake:
+    score: スコア
+    best: ベスト
+    sequence: 数列
+    start: スタート
+    restart: リスタート
+    pause: 一時停止
+    resume: 再開
+    ready: 矢印キー、WASD、スワイプ、または方向パッドで操作します。
+    paused: 一時停止中。
+    game_over: ゲームオーバー。
+    up: 上
+    down: 下
+    left: 左
+    right: 右
   search:
     title: 検索
     label: ページ、技術記事、レシピ、詩を検索
@@ -249,6 +283,8 @@ ne:
     tools_tagline: ब्राउजरमै चल्ने साना उपकरणहरू।
     pi_portrait_title: पाई पोर्ट्रेट
     pi_portrait_tagline: तस्बिरलाई पाईका अंकहरूबाट बनेको SVG मा बदल्नुहोस्। सबै प्रक्रिया ब्राउजरमै हुन्छ; तस्बिर अपलोड हुँदैन।
+    pi_snake_title: पाई स्नेक
+    pi_snake_tagline: पाईका अंकहरू क्रमसँग खाँदै बढ्नुहोस्।
   pi_tool:
     sample: नमुना तस्बिर
     use_sample: नमुना लोड गर्नुहोस्
@@ -273,6 +309,21 @@ ne:
     download_png: PNG डाउनलोड गर्नुहोस्
     generating: "{count} अंक बनाउँदै…"
     ready: तयार छ।
+  pi_snake:
+    score: स्कोर
+    best: उत्कृष्ट
+    sequence: क्रम
+    start: सुरु
+    restart: फेरि सुरु
+    pause: रोक्नुहोस्
+    resume: जारी राख्नुहोस्
+    ready: एरो, WASD, स्वाइप वा दिशा प्याड प्रयोग गर्नुहोस्।
+    paused: रोकिएको छ।
+    game_over: खेल समाप्त।
+    up: माथि
+    down: तल
+    left: बायाँ
+    right: दायाँ
   search:
     title: खोज
     label: पृष्ठ, प्राविधिक लेख, रेसिपी र कविता खोज्नुहोस्
@@ -354,6 +405,8 @@ hi:
     tools_tagline: ब्राउज़र में चलने वाले छोटे उपकरण।
     pi_portrait_title: पाई पोर्ट्रेट
     pi_portrait_tagline: तस्वीर को केवल पाई के अंकों से बने SVG में बदलें। पूरी प्रक्रिया ब्राउज़र में होती है; तस्वीर अपलोड नहीं होती।
+    pi_snake_title: पाई स्नेक
+    pi_snake_tagline: पाई के अंकों को क्रम से खाएँ और बढ़ते जाएँ।
   pi_tool:
     sample: नमूना तस्वीर
     use_sample: नमूना लोड करें
@@ -378,6 +431,21 @@ hi:
     download_png: PNG डाउनलोड करें
     generating: "{count} अंकों से बनाया जा रहा है…"
     ready: तैयार है।
+  pi_snake:
+    score: स्कोर
+    best: सर्वश्रेष्ठ
+    sequence: क्रम
+    start: शुरू करें
+    restart: फिर शुरू करें
+    pause: रोकें
+    resume: जारी रखें
+    ready: तीर कुंजियाँ, WASD, स्वाइप या दिशा-पैड उपयोग करें।
+    paused: रुका हुआ।
+    game_over: खेल समाप्त।
+    up: ऊपर
+    down: नीचे
+    left: बाएँ
+    right: दाएँ
   search:
     title: खोज
     label: पृष्ठ, तकनीकी लेख, रेसिपी और कविताएँ खोजें
@@ -459,6 +527,8 @@ kn:
     tools_tagline: ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಸಣ್ಣ ಉಪಕರಣಗಳು.
     pi_portrait_title: ಪೈ ಪೋರ್ಟ್ರೇಟ್
     pi_portrait_tagline: ಚಿತ್ರವನ್ನು ಪೈ ಅಂಕೆಗಳಿಂದ ನಿರ್ಮಿಸಿದ SVG ಆಗಿ ಪರಿವರ್ತಿಸಿ. ಎಲ್ಲ ಪ್ರಕ್ರಿಯೆಯೂ ಬ್ರೌಸರ್‌ನಲ್ಲೇ ನಡೆಯುತ್ತದೆ; ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡುವುದಿಲ್ಲ.
+    pi_snake_title: ಪೈ ಸ್ನೇಕ್
+    pi_snake_tagline: ಪೈ ಅಂಕೆಗಳನ್ನು ಕ್ರಮವಾಗಿ ತಿಂದು ಬೆಳೆಯಿರಿ.
   pi_tool:
     sample: ಮಾದರಿ ಚಿತ್ರ
     use_sample: ಮಾದರಿಯನ್ನು ಲೋಡ್ ಮಾಡಿ
@@ -483,6 +553,21 @@ kn:
     download_png: PNG ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
     generating: "{count} ಅಂಕೆಗಳಿಂದ ರಚಿಸಲಾಗುತ್ತಿದೆ…"
     ready: ಸಿದ್ಧವಾಗಿದೆ.
+  pi_snake:
+    score: ಅಂಕ
+    best: ಅತ್ಯುತ್ತಮ
+    sequence: ಕ್ರಮ
+    start: ಪ್ರಾರಂಭಿಸಿ
+    restart: ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಿ
+    pause: ವಿರಾಮ
+    resume: ಮುಂದುವರಿಸಿ
+    ready: ಬಾಣದ ಕೀಲಿಗಳು, WASD, ಸ್ವೈಪ್ ಅಥವಾ ದಿಕ್ಕಿನ ಪ್ಯಾಡ್ ಬಳಸಿ.
+    paused: ವಿರಾಮದಲ್ಲಿದೆ.
+    game_over: ಆಟ ಮುಗಿದಿದೆ.
+    up: ಮೇಲೆ
+    down: ಕೆಳಗೆ
+    left: ಎಡ
+    right: ಬಲ
   search:
     title: ಹುಡುಕಾಟ
     label: ಪುಟಗಳು, ತಾಂತ್ರಿಕ ಲೇಖನಗಳು, ಪಾಕವಿಧಾನಗಳು ಮತ್ತು ಕವಿತೆಗಳನ್ನು ಹುಡುಕಿ
