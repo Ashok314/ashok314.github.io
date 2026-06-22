@@ -12,6 +12,7 @@ en:
     light: Light
     dark: Dark
     grey: Grey
+    neo: Neo
     contrast: High contrast
   footer:
     display_name: Ashok Acharya
@@ -86,6 +87,7 @@ ja:
     light: ライト
     dark: ダーク
     grey: グレー
+    neo: ネオ
     contrast: ハイコントラスト
   footer:
     display_name: アチャリャ・アソック
@@ -160,6 +162,7 @@ ne:
     light: उज्यालो
     dark: अँध्यारो
     grey: खैरो
+    neo: नियो
     contrast: उच्च कन्ट्रास्ट
   footer:
     display_name: अशोक आचार्य
@@ -234,6 +237,7 @@ hi:
     light: हल्का
     dark: गहरा
     grey: धूसर
+    neo: नियो
     contrast: उच्च कंट्रास्ट
   footer:
     display_name: अशोक आचार्य
@@ -293,3 +297,78 @@ hi:
     free_writing: मुक्त लेखन
     about: इस पृष्ठ के बारे में
     backstory: पृष्ठभूमि
+
+kn:
+  nav:
+    books.md: ಪುಸ್ತಕಗಳು
+    films.md: ಚಲನಚಿತ್ರಗಳು
+    poems.md: ಕವಿತೆಗಳು
+    tech.md: ತಂತ್ರಜ್ಞಾನ
+    cooking.md: ಅಡುಗೆ
+  header:
+    search: ತಾಣದಲ್ಲಿ ಹುಡುಕಿ
+  theme:
+    label: ಬಣ್ಣದ ಥೀಮ್
+    light: ಬೆಳಕು
+    dark: ಕತ್ತಲೆ
+    grey: ಬೂದು
+    neo: ನಿಯೋ
+    contrast: ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್
+  footer:
+    display_name: ಅಶೋಕ್ ಆಚಾರ್ಯ
+    description: ಸಾಫ್ಟ್‌ವೇರ್ ಎಂಜಿನಿಯರ್ ಮತ್ತು ಸಂಶೋಧಕ. ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆಗಳು, ಸಾಫ್ಟ್‌ವೇರ್ ಪರಿಶೀಲನೆ ಮತ್ತು ಸೆಪರೇಷನ್ ಲಾಜಿಕ್. ಟೋಕಿಯೋದಲ್ಲಿ ನೆಲೆಸಿದ್ದಾರೆ.
+    report_issue: ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ
+    issue_title: ಪುಟದಲ್ಲಿ ಸಮಸ್ಯೆ
+    issue_page: ಪುಟ
+    issue_question: ಸಮಸ್ಯೆ ಏನು?
+  pages:
+    books_title: ಪುಸ್ತಕಗಳು
+    books_tagline: ಓದಿನ ಟಿಪ್ಪಣಿಗಳು ಮತ್ತು ಶಿಫಾರಸುಗಳು.
+    books_empty: ಇನ್ನೂ ಇಲ್ಲಿ ಏನೂ ಇಲ್ಲ — ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ ನೋಡಿ.
+    films_title: ಚಲನಚಿತ್ರಗಳು
+    films_tagline: ನೋಡಿದ ಚಲನಚಿತ್ರಗಳು ಮತ್ತು ಅನಿಸಿಕೆಗಳು.
+    films_empty: ಇನ್ನೂ ಇಲ್ಲಿ ಏನೂ ಇಲ್ಲ — ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ ನೋಡಿ.
+    tech_title: ತಂತ್ರಜ್ಞಾನ ಲಾಗ್
+    tech_tagline: ಲೇಖನಗಳು, ಟ್ಯುಟೋರಿಯಲ್‌ಗಳು, ಅಭಿಪ್ರಾಯಗಳು ಮತ್ತು ದಾಖಲಿಸಬೇಕಾದ ವಿಚಾರಗಳು.
+    tech_cross_posted: Hashnode ನಲ್ಲಿಯೂ ಪ್ರಕಟಿಸಲಾಗಿದೆ
+    cooking_title: ಅಡುಗೆ
+    cooking_tagline: ಪಾಕವಿಧಾನಗಳು, ಪ್ರಯೋಗಗಳು ಮತ್ತು ತಿನ್ನಲು ಯೋಗ್ಯವಾದವು.
+  search:
+    title: ಹುಡುಕಾಟ
+    label: ಪುಟಗಳು, ತಾಂತ್ರಿಕ ಲೇಖನಗಳು, ಪಾಕವಿಧಾನಗಳು ಮತ್ತು ಕವಿತೆಗಳನ್ನು ಹುಡುಕಿ
+    placeholder: ಕನಿಷ್ಠ ಎರಡು ಅಕ್ಷರಗಳನ್ನು ನಮೂದಿಸಿ
+    content_type: ವಿಷಯದ ಪ್ರಕಾರ
+    all: ಎಲ್ಲಾ ವಿಷಯ
+    pages: ಪುಟಗಳು
+    tech: ತಂತ್ರಜ್ಞಾನ
+    recipes: ಪಾಕವಿಧಾನಗಳು
+    poems: ಕವಿತೆಗಳು
+    free_writing: ಮುಕ್ತ ಬರಹ
+    regex: ರೆಗ್ಯುಲರ್ ಎಕ್ಸ್‌ಪ್ರೆಷನ್ ಬಳಸಿ
+    result: "{count} ಫಲಿತಾಂಶ"
+    results: "{count} ಫಲಿತಾಂಶಗಳು"
+    invalid_regex: "ಅಮಾನ್ಯ ರೆಗ್ಯುಲರ್ ಎಕ್ಸ್‌ಪ್ರೆಷನ್:"
+    types:
+      page: ಪುಟ
+      tech: ತಂತ್ರಜ್ಞಾನ
+      recipe: ಪಾಕವಿಧಾನ
+      poem: ಕವಿತೆ
+      free-writing: ಮುಕ್ತ ಬರಹ
+  article:
+    updated: ನವೀಕರಿಸಲಾಗಿದೆ
+    min_read: ನಿಮಿಷಗಳಲ್ಲಿ ಓದಿ
+    words: ಪದಗಳು
+    ai_generated: AI ರಚಿಸಿದ ವಿಷಯ
+    ai_author_note: AI ರಚಿಸಿದ · ಲೇಖಕರ ಟಿಪ್ಪಣಿ ಸೇರಿದೆ
+    original_conversation: "ಮೂಲ ಸಂಭಾಷಣೆ:"
+    link: ಲಿಂಕ್
+    view_prompt: ಪ್ರಾಂಪ್ಟ್ ನೋಡಿ
+    contents: ವಿಷಯ ಸೂಚಿ
+    references: ಉಲ್ಲೇಖಗಳು
+    changelog: ಬದಲಾವಣೆಗಳ ಪಟ್ಟಿ
+  poems:
+    index: ಸೂಚಿ
+    poems: ಕವಿತೆಗಳು
+    free_writing: ಮುಕ್ತ ಬರಹ
+    about: ಈ ಪುಟದ ಬಗ್ಗೆ
+    backstory: ಹಿನ್ನೆಲೆ

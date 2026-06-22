@@ -37,6 +37,7 @@
           <button type="button" data-ui-lang="en" title="English">EN</button>
           <button type="button" data-ui-lang="ne" title="नेपाली">ने</button>
           <button type="button" data-ui-lang="hi" title="हिन्दी">हि</button>
+          <button type="button" data-ui-lang="kn" title="ಕನ್ನಡ">ಕ</button>
         </div>
 
         <details class="theme-picker">
@@ -45,6 +46,7 @@
             <button type="button" data-theme-choice="light" aria-label="{{ ui.theme.light }}" title="{{ ui.theme.light }}" data-ui-aria-section="theme" data-ui-aria-key="light" data-ui-title-section="theme" data-ui-title-key="light"><span class="theme-swatch theme-swatch-light"></span></button>
             <button type="button" data-theme-choice="dark" aria-label="{{ ui.theme.dark }}" title="{{ ui.theme.dark }}" data-ui-aria-section="theme" data-ui-aria-key="dark" data-ui-title-section="theme" data-ui-title-key="dark"><span class="theme-swatch theme-swatch-dark"></span></button>
             <button type="button" data-theme-choice="grey" aria-label="{{ ui.theme.grey }}" title="{{ ui.theme.grey }}" data-ui-aria-section="theme" data-ui-aria-key="grey" data-ui-title-section="theme" data-ui-title-key="grey"><span class="theme-swatch theme-swatch-grey"></span></button>
+            <button type="button" data-theme-choice="neo" aria-label="{{ ui.theme.neo }}" title="{{ ui.theme.neo }}" data-ui-aria-section="theme" data-ui-aria-key="neo" data-ui-title-section="theme" data-ui-title-key="neo"><span class="theme-swatch theme-swatch-neo"></span></button>
             <button type="button" data-theme-choice="contrast" aria-label="{{ ui.theme.contrast }}" title="{{ ui.theme.contrast }}" data-ui-aria-section="theme" data-ui-aria-key="contrast" data-ui-title-section="theme" data-ui-title-key="contrast"><span class="theme-swatch theme-swatch-contrast"></span></button>
           </div>
         </details>
@@ -157,7 +159,7 @@
 
     window.siteUI = { apply, select, strings, language: () => language };
 
-    const themes = ['light', 'dark', 'grey', 'contrast'];
+    const themes = ['light', 'dark', 'grey', 'neo', 'contrast'];
     let storedTheme = null;
     try { storedTheme = window.localStorage.getItem('color_theme'); } catch (error) {}
 

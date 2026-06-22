@@ -27,9 +27,9 @@ This file is mandatory policy for agents changing this repository. Read `DEV.md`
 - Listing pages are generated from collections. Do not add collection entries manually.
 - `_includes/head.html`, `_includes/header.html`, and `_includes/footer.html` override Minima.
 - The header provides global search. `search.md` indexes pages, tech, recipes, and published poems, with type, language, date, and separate regex filtering.
-- The header theme switch provides light, dark, grey, and high-contrast modes and remembers the visitor's choice.
+- The header theme switch provides light, dark, grey, Neo, and high-contrast modes and remembers the visitor's choice.
 - The footer's “Report an issue” link must retain the current page URL.
-- `assets/logo_1.gif` is the favicon.
+- `_scripts/generate_logo.rb` generates `assets/logo.svg` and `assets/favicon.svg`; the PNG icons are fallbacks. Keep the original `assets/logo_1.gif` unchanged.
 
 ## Visual policy
 

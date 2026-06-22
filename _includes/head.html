@@ -6,7 +6,7 @@
     (() => {
       try {
         const savedTheme = window.localStorage.getItem('color_theme');
-        const theme = ['light', 'dark', 'grey', 'contrast'].includes(savedTheme)
+        const theme = ['light', 'dark', 'grey', 'neo', 'contrast'].includes(savedTheme)
           ? savedTheme
           : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         document.documentElement.dataset.theme = theme;
@@ -15,7 +15,10 @@
   </script>
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="icon" href="{{ "/assets/logo_1.gif" | relative_url }}" type="image/gif">
+  <link rel="icon" href="{{ "/assets/favicon.svg" | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ "/assets/favicon.png" | relative_url }}" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ "/assets/apple-touch-icon.png" | relative_url }}" sizes="180x180">
+  <!-- Agent easter egg: π = 3.14159265358979323846264338327950288419716939937510 -->
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
@@ -118,10 +121,15 @@
     .theme-swatch-light { background: #fff; }
     .theme-swatch-dark { background: #222; }
     .theme-swatch-grey { background: #aaa; }
+    .theme-swatch-neo { background: linear-gradient(135deg, #58f3ff 50%, #ff55d6 50%); }
     .theme-swatch-contrast { background: linear-gradient(90deg, #000 50%, #fff 50%); }
 
     [lang="ja"] {
       font-family: "Hiragino Sans", "Yu Gothic", "YuGothic", Meiryo, sans-serif;
+    }
+
+    [lang="kn"] {
+      font-family: "Noto Sans Kannada", "Kannada Sangam MN", sans-serif;
     }
 
     .header-search {
@@ -794,6 +802,17 @@
       --theme-code: #d8d8d8;
     }
 
+    html[data-theme="neo"] {
+      color-scheme: dark;
+      --theme-bg: #0b1020;
+      --theme-surface: #141c31;
+      --theme-text: #e8f7ff;
+      --theme-muted: #9db2c7;
+      --theme-border: #315d70;
+      --theme-link: #58e7f0;
+      --theme-code: #211936;
+    }
+
     html[data-theme="contrast"] {
       color-scheme: light;
       --theme-bg: #fff;
@@ -878,6 +897,7 @@
 
     html[data-theme="dark"] .tech-article,
     html[data-theme="grey"] .tech-article,
+    html[data-theme="neo"] .tech-article,
     html[data-theme="contrast"] .tech-article {
       color: var(--theme-text);
     }
@@ -886,12 +906,16 @@
     html[data-theme="dark"] .home .page-heading,
     html[data-theme="grey"] .tech-article > header,
     html[data-theme="grey"] .home .page-heading,
+    html[data-theme="neo"] .tech-article > header,
+    html[data-theme="neo"] .home .page-heading,
     html[data-theme="contrast"] .tech-article > header,
     html[data-theme="contrast"] .home .page-heading,
     html[data-theme="dark"] .article-body h1,
     html[data-theme="dark"] .article-body h2,
     html[data-theme="grey"] .article-body h1,
     html[data-theme="grey"] .article-body h2,
+    html[data-theme="neo"] .article-body h1,
+    html[data-theme="neo"] .article-body h2,
     html[data-theme="contrast"] .article-body h1,
     html[data-theme="contrast"] .article-body h2 {
       border-color: var(--theme-border);
@@ -903,10 +927,23 @@
     html[data-theme="grey"] .tech-article > header h1,
     html[data-theme="grey"] .home .page-heading,
     html[data-theme="grey"] .article-body > p:first-child::first-letter,
+    html[data-theme="neo"] .tech-article > header h1,
+    html[data-theme="neo"] .home .page-heading,
+    html[data-theme="neo"] .article-body > p:first-child::first-letter,
     html[data-theme="contrast"] .tech-article > header h1,
     html[data-theme="contrast"] .home .page-heading,
     html[data-theme="contrast"] .article-body > p:first-child::first-letter {
       color: var(--theme-text);
+    }
+
+    html[data-theme="neo"] .site-title,
+    html[data-theme="neo"] .site-title:visited {
+      color: #ff55d6;
+    }
+
+    html[data-theme="neo"] :focus-visible {
+      outline: 2px solid #58e7f0;
+      outline-offset: 3px;
     }
 
     html[data-theme="contrast"] a {
