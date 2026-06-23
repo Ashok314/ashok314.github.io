@@ -17,6 +17,24 @@ Open **http://localhost:4000**. Changes reload automatically.
 
 ---
 
+## Checks
+
+Run the same checks used before commits:
+
+```bash
+./_scripts/check
+```
+
+Enable the tracked pre-commit and pre-push hooks once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Pre-commit checks staged whitespace, then both hooks check JavaScript syntax, UI translation-key parity, and a production Jekyll build.
+
+---
+
 ## Structure
 
 ```
@@ -176,4 +194,3 @@ No layout changes needed — renders automatically.
 ### Update nav order
 
 Edit `header_pages` in `_config.yml`. Restart Jekyll locally after config changes.
-

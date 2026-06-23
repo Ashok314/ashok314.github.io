@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+cd "$(dirname "$0")/.."
+
+echo "Checking JavaScript syntax..."
+for file in assets/js/*.js; do
+  node --check "$file"
+done
+
+echo "Checking UI translation keys..."
+ruby -e 'require "yaml"; data = YAML.load_file("_data/ui.yml"); data["en"].each_key { |section| expected = data["en"][section].keys.sort; abort "#{section} keys differ between languages" unless data.all? { |_, strings| strings[section]&.keys&.sort == expected } }'
+
+echo "Building the site..."
+JEKYLL_ENV=production bundle exec jekyll build --quiet
+
+echo "All checks passed."
