@@ -17,5 +17,5 @@ ui_page: tools
 
 ---
 
-**[<span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="pi_snake_title">{{ ui.pages.pi_snake_title }}</span>](/pi-snake/)**<br>
+**[<span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="pi_snake_title">{{ ui.pages.pi_snake_title }}</span>](/pi_snake/)**<br>
 <span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="pi_snake_tagline">{{ ui.pages.pi_snake_tagline }}</span>

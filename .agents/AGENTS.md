@@ -31,7 +31,7 @@ This file is mandatory policy for agents changing this repository. Read `DEV.md`
 - The footer's “Report an issue” link must retain the current page URL.
 - `_scripts/generate_logo.rb` generates `assets/logo.svg` and `assets/favicon.svg`; the PNG icons are fallbacks. Keep the original `assets/logo_1.gif` unchanged.
 - `/pi-portrait/` is a client-side portrait-to-pi-digits SVG/PNG tool. Its browser code is `assets/js/pi-portrait.js`; `assets/pi-digits.txt` is the shared digit source and `assets/avatar-original.jpg` is the sample input.
-- `/pi-snake/` is a client-side canvas game using `assets/js/pi-snake.js` and the shared pi digit source. It supports keyboard, swipe, and touch-pad controls.
+- `/pi_snake/` is a client-side canvas game using `assets/js/pi_snake.js` and the shared pi digit source. It supports keyboard, swipe, and touch-pad controls.
 
 ## Visual policy
 

@@ -39,8 +39,11 @@ en:
     tools_tagline: Small tools that run in your browser.
     pi_portrait_title: Pi Portrait
     pi_portrait_tagline: Turn a portrait into an SVG composed entirely of pi digits. Everything runs in your browser; your image is never uploaded.
-    pi_snake_title: Pi Snake
+    pi_snake_title: pi_snake
     pi_snake_tagline: Eat the digits of pi in sequence and grow.
+    not_found_title: Page not found
+    not_found_message: This route does not exist.
+    back_home: Back home
   pi_tool:
     sample: Sample image
     use_sample: Load sample
@@ -68,14 +71,27 @@ en:
   pi_snake:
     score: Score
     best: Best
-    sequence: Sequence
     start: Start
     restart: Restart
     pause: Pause
     resume: Resume
-    ready: Use arrows, WASD, swipe, or the direction pad.
     paused: Paused.
     game_over: Game over.
+    checkpoint: Achievement unlocked!
+    shortcuts: Arrows/WASD move · Space pause · R restart
+    agent_challenge: "Agent challenge: reach 314 using only the visible board and controls — no game-state or local-storage edits."
+    share_x: Share on X
+    share_result: Share result
+    share_failed: Could not share the screenshot.
+    share_text: Can your agent play this?
+    share_score: "pi_snake score: {score}. Can your agent play this?"
+    credit: Codex (GPT-5) · one delightfully overgrown session.
+    built_for_agents: Built by agent for the agent.
+    achievements: Achievements
+    milestone_jpl: "🏅 Solar-System Navigator — 16 digits of JPL-grade precision!"
+    milestone_double: "💾 Machine Precision Master — 17 digits, at the edge of ordinary 64-bit precision!"
+    milestone_universe: "🌌 Cosmic Cartographer — 38 digits, enough for universe-scale measurement at atomic precision!"
+    milestone_314: "🥧 Pi Legend — 314 digits! You have become the circle."
     up: Up
     down: Down
     left: Left
@@ -161,8 +177,11 @@ ja:
     tools_tagline: ブラウザで使える小さなツール。
     pi_portrait_title: 円周率ポートレート
     pi_portrait_tagline: 写真を円周率の数字だけで構成されたSVGに変換します。処理はすべてブラウザ内で行われ、画像はアップロードされません。
-    pi_snake_title: 円周率スネーク
+    pi_snake_title: pi_snake
     pi_snake_tagline: 円周率の数字を順番に食べて成長します。
+    not_found_title: ページが見つかりません
+    not_found_message: このルートは存在しません。
+    back_home: ホームへ戻る
   pi_tool:
     sample: サンプル画像
     use_sample: サンプルを読み込む
@@ -190,14 +209,27 @@ ja:
   pi_snake:
     score: スコア
     best: ベスト
-    sequence: 数列
     start: スタート
     restart: リスタート
     pause: 一時停止
     resume: 再開
-    ready: 矢印キー、WASD、スワイプ、または方向パッドで操作します。
     paused: 一時停止中。
     game_over: ゲームオーバー。
+    checkpoint: 実績解除！
+    shortcuts: 矢印/WASDで移動・Spaceで一時停止・Rでリスタート
+    agent_challenge: "エージェント・チャレンジ：表示された盤面と操作だけで314を目指せ。ゲーム状態やローカルストレージの編集は禁止。"
+    share_x: Xで共有
+    share_result: 結果を共有
+    share_failed: スクリーンショットを共有できませんでした。
+    share_text: あなたのエージェントはプレイできる？
+    share_score: "pi_snake スコア：{score}。あなたのエージェントはプレイできる？"
+    credit: Codex（GPT-5）· 楽しく膨らんだひとつのセッション。
+    built_for_agents: エージェントが、エージェントのために作りました。
+    achievements: 実績
+    milestone_jpl: "🏅 太陽系ナビゲーター — JPL級の16桁精度を獲得！"
+    milestone_double: "💾 マシン精度マスター — 17桁、通常の64ビット精度の限界へ！"
+    milestone_universe: "🌌 宇宙地図製作者 — 38桁で宇宙規模を原子レベルの精度へ！"
+    milestone_314: "🥧 円周率レジェンド — 314桁！あなた自身が円になった。"
     up: 上
     down: 下
     left: 左
@@ -283,8 +315,11 @@ ne:
     tools_tagline: ब्राउजरमै चल्ने साना उपकरणहरू।
     pi_portrait_title: पाई पोर्ट्रेट
     pi_portrait_tagline: तस्बिरलाई पाईका अंकहरूबाट बनेको SVG मा बदल्नुहोस्। सबै प्रक्रिया ब्राउजरमै हुन्छ; तस्बिर अपलोड हुँदैन।
-    pi_snake_title: पाई स्नेक
+    pi_snake_title: pi_snake
     pi_snake_tagline: पाईका अंकहरू क्रमसँग खाँदै बढ्नुहोस्।
+    not_found_title: पृष्ठ भेटिएन
+    not_found_message: यो मार्ग अस्तित्वमा छैन।
+    back_home: गृहपृष्ठमा फर्कनुहोस्
   pi_tool:
     sample: नमुना तस्बिर
     use_sample: नमुना लोड गर्नुहोस्
@@ -312,14 +347,27 @@ ne:
   pi_snake:
     score: स्कोर
     best: उत्कृष्ट
-    sequence: क्रम
     start: सुरु
     restart: फेरि सुरु
     pause: रोक्नुहोस्
     resume: जारी राख्नुहोस्
-    ready: एरो, WASD, स्वाइप वा दिशा प्याड प्रयोग गर्नुहोस्।
     paused: रोकिएको छ।
     game_over: खेल समाप्त।
+    checkpoint: उपलब्धि खुल्यो!
+    shortcuts: एरो/WASD चल्ने · Space रोक्ने · R फेरि सुरु
+    agent_challenge: "एजेन्ट चुनौती: देखिएको बोर्ड र कन्ट्रोल मात्र प्रयोग गरेर ३१४ पुग्नुहोस् — गेम स्टेट वा लोकल स्टोरेज नबदल्नुहोस्।"
+    share_x: X मा सेयर गर्नुहोस्
+    share_result: नतिजा सेयर गर्नुहोस्
+    share_failed: स्क्रिनसट सेयर गर्न सकिएन।
+    share_text: तपाईंको एजेन्टले यो खेल्न सक्छ?
+    share_score: "pi_snake स्कोर: {score}। तपाईंको एजेन्टले यो खेल्न सक्छ?"
+    credit: Codex (GPT-5) · रमाइलोसँग लम्बिएको एउटै सत्र।
+    built_for_agents: एजेन्टद्वारा एजेन्टका लागि निर्मित।
+    achievements: उपलब्धिहरू
+    milestone_jpl: "🏅 सौर्यमण्डल नेभिगेटर — JPL-स्तरको १६ अंकको शुद्धता हासिल!"
+    milestone_double: "💾 मेसिन शुद्धता मास्टर — १७ अंक, सामान्य ६४-बिट शुद्धताको सीमामा!"
+    milestone_universe: "🌌 ब्रह्माण्ड नक्साकार — ३८ अंकले ब्रह्माण्डीय दूरी परमाणुस्तरको शुद्धतामा!"
+    milestone_314: "🥧 पाई लेजेन्ड — ३१४ अंक! अब तपाईं स्वयं वृत्त बन्नुभयो।"
     up: माथि
     down: तल
     left: बायाँ
@@ -405,8 +453,11 @@ hi:
     tools_tagline: ब्राउज़र में चलने वाले छोटे उपकरण।
     pi_portrait_title: पाई पोर्ट्रेट
     pi_portrait_tagline: तस्वीर को केवल पाई के अंकों से बने SVG में बदलें। पूरी प्रक्रिया ब्राउज़र में होती है; तस्वीर अपलोड नहीं होती।
-    pi_snake_title: पाई स्नेक
+    pi_snake_title: pi_snake
     pi_snake_tagline: पाई के अंकों को क्रम से खाएँ और बढ़ते जाएँ।
+    not_found_title: पृष्ठ नहीं मिला
+    not_found_message: यह मार्ग मौजूद नहीं है।
+    back_home: मुख्य पृष्ठ पर लौटें
   pi_tool:
     sample: नमूना तस्वीर
     use_sample: नमूना लोड करें
@@ -434,14 +485,27 @@ hi:
   pi_snake:
     score: स्कोर
     best: सर्वश्रेष्ठ
-    sequence: क्रम
     start: शुरू करें
     restart: फिर शुरू करें
     pause: रोकें
     resume: जारी रखें
-    ready: तीर कुंजियाँ, WASD, स्वाइप या दिशा-पैड उपयोग करें।
     paused: रुका हुआ।
     game_over: खेल समाप्त।
+    checkpoint: उपलब्धि अनलॉक!
+    shortcuts: तीर/WASD चलें · Space रोकें · R पुनः शुरू
+    agent_challenge: "एजेंट चुनौती: केवल दिखाई देने वाले बोर्ड और नियंत्रणों से 314 तक पहुँचें — गेम स्टेट या लोकल स्टोरेज न बदलें।"
+    share_x: X पर साझा करें
+    share_result: परिणाम साझा करें
+    share_failed: स्क्रीनशॉट साझा नहीं किया जा सका।
+    share_text: क्या आपका एजेंट इसे खेल सकता है?
+    share_score: "pi_snake स्कोर: {score}। क्या आपका एजेंट इसे खेल सकता है?"
+    credit: Codex (GPT-5) · आनंद से बढ़ता गया एक ही सत्र।
+    built_for_agents: एजेंट द्वारा, एजेंट के लिए बनाया गया।
+    achievements: उपलब्धियाँ
+    milestone_jpl: "🏅 सौरमंडल नेविगेटर — JPL-स्तर की 16 अंकों की सटीकता हासिल!"
+    milestone_double: "💾 मशीन प्रिसीजन मास्टर — 17 अंक, सामान्य 64-बिट सटीकता की सीमा पर!"
+    milestone_universe: "🌌 कॉस्मिक मानचित्रकार — 38 अंकों से ब्रह्मांडीय दूरी परमाणु-स्तर की सटीकता पर!"
+    milestone_314: "🥧 पाई लीजेंड — 314 अंक! अब आप स्वयं वृत्त बन गए।"
     up: ऊपर
     down: नीचे
     left: बाएँ
@@ -527,8 +591,11 @@ kn:
     tools_tagline: ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಸಣ್ಣ ಉಪಕರಣಗಳು.
     pi_portrait_title: ಪೈ ಪೋರ್ಟ್ರೇಟ್
     pi_portrait_tagline: ಚಿತ್ರವನ್ನು ಪೈ ಅಂಕೆಗಳಿಂದ ನಿರ್ಮಿಸಿದ SVG ಆಗಿ ಪರಿವರ್ತಿಸಿ. ಎಲ್ಲ ಪ್ರಕ್ರಿಯೆಯೂ ಬ್ರೌಸರ್‌ನಲ್ಲೇ ನಡೆಯುತ್ತದೆ; ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡುವುದಿಲ್ಲ.
-    pi_snake_title: ಪೈ ಸ್ನೇಕ್
+    pi_snake_title: pi_snake
     pi_snake_tagline: ಪೈ ಅಂಕೆಗಳನ್ನು ಕ್ರಮವಾಗಿ ತಿಂದು ಬೆಳೆಯಿರಿ.
+    not_found_title: ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ
+    not_found_message: ಈ ಮಾರ್ಗ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.
+    back_home: ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ
   pi_tool:
     sample: ಮಾದರಿ ಚಿತ್ರ
     use_sample: ಮಾದರಿಯನ್ನು ಲೋಡ್ ಮಾಡಿ
@@ -556,14 +623,27 @@ kn:
   pi_snake:
     score: ಅಂಕ
     best: ಅತ್ಯುತ್ತಮ
-    sequence: ಕ್ರಮ
     start: ಪ್ರಾರಂಭಿಸಿ
     restart: ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಿ
     pause: ವಿರಾಮ
     resume: ಮುಂದುವರಿಸಿ
-    ready: ಬಾಣದ ಕೀಲಿಗಳು, WASD, ಸ್ವೈಪ್ ಅಥವಾ ದಿಕ್ಕಿನ ಪ್ಯಾಡ್ ಬಳಸಿ.
     paused: ವಿರಾಮದಲ್ಲಿದೆ.
     game_over: ಆಟ ಮುಗಿದಿದೆ.
+    checkpoint: ಸಾಧನೆ ಅನ್ಲಾಕ್!
+    shortcuts: ಬಾಣ/WASD ಚಲನೆ · Space ವಿರಾಮ · R ಮರುಪ್ರಾರಂಭ
+    agent_challenge: "ಏಜೆಂಟ್ ಸವಾಲು: ಕಾಣುವ ಬೋರ್ಡ್ ಮತ್ತು ನಿಯಂತ್ರಣಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ 314 ತಲುಪಿ — ಆಟದ ಸ್ಥಿತಿ ಅಥವಾ ಲೋಕಲ್ ಸ್ಟೋರೇಜ್ ಬದಲಿಸಬೇಡಿ."
+    share_x: X ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ
+    share_result: ಫಲಿತಾಂಶ ಹಂಚಿಕೊಳ್ಳಿ
+    share_failed: ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.
+    share_text: ನಿಮ್ಮ ಏಜೆಂಟ್ ಇದನ್ನು ಆಡಬಹುದೇ?
+    share_score: "pi_snake ಅಂಕ: {score}. ನಿಮ್ಮ ಏಜೆಂಟ್ ಇದನ್ನು ಆಡಬಹುದೇ?"
+    credit: Codex (GPT-5) · ಸಂತೋಷದಿಂದ ಬೆಳೆದ ಒಂದೇ ಸೆಷನ್.
+    built_for_agents: ಏಜೆಂಟ್‌ನಿಂದ, ಏಜೆಂಟ್‌ಗಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ.
+    achievements: ಸಾಧನೆಗಳು
+    milestone_jpl: "🏅 ಸೌರವ್ಯೂಹ ನ್ಯಾವಿಗೇಟರ್ — JPL ಮಟ್ಟದ 16 ಅಂಕೆಗಳ ನಿಖರತೆ ಸಾಧಿಸಲಾಗಿದೆ!"
+    milestone_double: "💾 ಯಂತ್ರ ನಿಖರತೆ ಮಾಸ್ಟರ್ — 17 ಅಂಕೆಗಳು, ಸಾಮಾನ್ಯ 64-ಬಿಟ್ ನಿಖರತೆಯ ಅಂಚಿನಲ್ಲಿ!"
+    milestone_universe: "🌌 ಬ್ರಹ್ಮಾಂಡ ನಕ್ಷೆಗಾರ — 38 ಅಂಕೆಗಳಿಂದ ಬ್ರಹ್ಮಾಂಡದ ದೂರವನ್ನು ಪರಮಾಣು ಮಟ್ಟದ ನಿಖರತೆಯಲ್ಲಿ!"
+    milestone_314: "🥧 ಪೈ ದಂತಕಥೆ — 314 ಅಂಕೆಗಳು! ಈಗ ನೀವೇ ವೃತ್ತವಾಗಿದ್ದೀರಿ."
     up: ಮೇಲೆ
     down: ಕೆಳಗೆ
     left: ಎಡ
