@@ -41,6 +41,8 @@ en:
     pi_portrait_tagline: Turn a portrait into an SVG composed entirely of pi digits. Everything runs in your browser; your image is never uploaded.
     pi_snake_title: pi_snake
     pi_snake_tagline: Eat the digits of pi in sequence and grow.
+    lazydiff_title: LazyDiff
+    lazydiff_tagline: Hide unwanted GitHub PR files with negative filters and see the diff size left to review.
     not_found_title: Page not found
     not_found_message: This route does not exist.
     back_home: Back home
@@ -179,6 +181,8 @@ ja:
     pi_portrait_tagline: 写真を円周率の数字だけで構成されたSVGに変換します。処理はすべてブラウザ内で行われ、画像はアップロードされません。
     pi_snake_title: pi_snake
     pi_snake_tagline: 円周率の数字を順番に食べて成長します。
+    lazydiff_title: LazyDiff
+    lazydiff_tagline: 不要なGitHub PRファイルをネガティブフィルターで隠し、レビュー対象の差分サイズを確認できます。
     not_found_title: ページが見つかりません
     not_found_message: このルートは存在しません。
     back_home: ホームへ戻る
@@ -317,6 +321,8 @@ ne:
     pi_portrait_tagline: तस्बिरलाई पाईका अंकहरूबाट बनेको SVG मा बदल्नुहोस्। सबै प्रक्रिया ब्राउजरमै हुन्छ; तस्बिर अपलोड हुँदैन।
     pi_snake_title: pi_snake
     pi_snake_tagline: पाईका अंकहरू क्रमसँग खाँदै बढ्नुहोस्।
+    lazydiff_title: LazyDiff
+    lazydiff_tagline: नकारात्मक फिल्टर प्रयोग गरेर GitHub PR का नचाहिने फाइलहरू लुकाउनुहोस् र समीक्षा गर्न बाँकी diff size हेर्नुहोस्।
     not_found_title: पृष्ठ भेटिएन
     not_found_message: यो मार्ग अस्तित्वमा छैन।
     back_home: गृहपृष्ठमा फर्कनुहोस्
@@ -455,6 +461,8 @@ hi:
     pi_portrait_tagline: तस्वीर को केवल पाई के अंकों से बने SVG में बदलें। पूरी प्रक्रिया ब्राउज़र में होती है; तस्वीर अपलोड नहीं होती।
     pi_snake_title: pi_snake
     pi_snake_tagline: पाई के अंकों को क्रम से खाएँ और बढ़ते जाएँ।
+    lazydiff_title: LazyDiff
+    lazydiff_tagline: नेगेटिव फ़िल्टर से GitHub PR की अनचाही फ़ाइलें छिपाएँ और समीक्षा के लिए बचा diff size देखें।
     not_found_title: पृष्ठ नहीं मिला
     not_found_message: यह मार्ग मौजूद नहीं है।
     back_home: मुख्य पृष्ठ पर लौटें
@@ -593,6 +601,8 @@ kn:
     pi_portrait_tagline: ಚಿತ್ರವನ್ನು ಪೈ ಅಂಕೆಗಳಿಂದ ನಿರ್ಮಿಸಿದ SVG ಆಗಿ ಪರಿವರ್ತಿಸಿ. ಎಲ್ಲ ಪ್ರಕ್ರಿಯೆಯೂ ಬ್ರೌಸರ್‌ನಲ್ಲೇ ನಡೆಯುತ್ತದೆ; ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡುವುದಿಲ್ಲ.
     pi_snake_title: pi_snake
     pi_snake_tagline: ಪೈ ಅಂಕೆಗಳನ್ನು ಕ್ರಮವಾಗಿ ತಿಂದು ಬೆಳೆಯಿರಿ.
+    lazydiff_title: LazyDiff
+    lazydiff_tagline: ನೆಗಟಿವ್ ಫಿಲ್ಟರ್‌ಗಳಿಂದ GitHub PR‌ನ ಬೇಡದ ಫೈಲ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ, ಪರಿಶೀಲನೆಗೆ ಉಳಿದ diff size ನೋಡಿ.
     not_found_title: ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ
     not_found_message: ಈ ಮಾರ್ಗ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.
     back_home: ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ

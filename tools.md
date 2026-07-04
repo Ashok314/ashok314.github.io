@@ -12,6 +12,12 @@ ui_page: tools
 
 ---
 
+**[<span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="lazydiff_title">{{ ui.pages.lazydiff_title }}</span>](https://ashok314.github.io/lazydiff/)**<br>
+<span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="lazydiff_tagline">{{ ui.pages.lazydiff_tagline }}</span><br>
+<small><a href="https://github.com/Ashok314/lazydiff">GitHub</a></small>
+
+---
+
 **[<span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="pi_portrait_title">{{ ui.pages.pi_portrait_title }}</span>](/pi-portrait/)**<br>
 <span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="pi_portrait_tagline">{{ ui.pages.pi_portrait_tagline }}</span>
 
