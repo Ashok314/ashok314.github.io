@@ -80,7 +80,7 @@ en:
     paused: Paused.
     game_over: Game over.
     checkpoint: Achievement unlocked!
-    shortcuts: Arrows/WASD move · Space pause · R restart
+    shortcuts: Swipe or tap pad on mobile · Arrows/WASD move · Space pause · R restart
     agent_challenge: "Agent challenge: reach 314 using only the visible board and controls — no game-state or local-storage edits."
     share_x: Share on X
     share_result: Share result
@@ -220,7 +220,7 @@ ja:
     paused: 一時停止中。
     game_over: ゲームオーバー。
     checkpoint: 実績解除！
-    shortcuts: 矢印/WASDで移動・Spaceで一時停止・Rでリスタート
+    shortcuts: モバイルはスワイプまたは方向パッド・矢印/WASDで移動・Spaceで一時停止・Rでリスタート
     agent_challenge: "エージェント・チャレンジ：表示された盤面と操作だけで314を目指せ。ゲーム状態やローカルストレージの編集は禁止。"
     share_x: Xで共有
     share_result: 結果を共有
@@ -360,7 +360,7 @@ ne:
     paused: रोकिएको छ।
     game_over: खेल समाप्त।
     checkpoint: उपलब्धि खुल्यो!
-    shortcuts: एरो/WASD चल्ने · Space रोक्ने · R फेरि सुरु
+    shortcuts: मोबाइलमा स्वाइप वा दिशा प्याड · एरो/WASD चल्ने · Space रोक्ने · R फेरि सुरु
     agent_challenge: "एजेन्ट चुनौती: देखिएको बोर्ड र कन्ट्रोल मात्र प्रयोग गरेर ३१४ पुग्नुहोस् — गेम स्टेट वा लोकल स्टोरेज नबदल्नुहोस्।"
     share_x: X मा सेयर गर्नुहोस्
     share_result: नतिजा सेयर गर्नुहोस्
@@ -500,7 +500,7 @@ hi:
     paused: रुका हुआ।
     game_over: खेल समाप्त।
     checkpoint: उपलब्धि अनलॉक!
-    shortcuts: तीर/WASD चलें · Space रोकें · R पुनः शुरू
+    shortcuts: मोबाइल पर स्वाइप या दिशा पैड · तीर/WASD चलें · Space रोकें · R पुनः शुरू
     agent_challenge: "एजेंट चुनौती: केवल दिखाई देने वाले बोर्ड और नियंत्रणों से 314 तक पहुँचें — गेम स्टेट या लोकल स्टोरेज न बदलें।"
     share_x: X पर साझा करें
     share_result: परिणाम साझा करें
@@ -640,7 +640,7 @@ kn:
     paused: ವಿರಾಮದಲ್ಲಿದೆ.
     game_over: ಆಟ ಮುಗಿದಿದೆ.
     checkpoint: ಸಾಧನೆ ಅನ್ಲಾಕ್!
-    shortcuts: ಬಾಣ/WASD ಚಲನೆ · Space ವಿರಾಮ · R ಮರುಪ್ರಾರಂಭ
+    shortcuts: ಮೊಬೈಲ್‌ನಲ್ಲಿ ಸ್ವೈಪ್ ಅಥವಾ ದಿಕ್ಕು ಪ್ಯಾಡ್ · ಬಾಣ/WASD ಚಲನೆ · Space ವಿರಾಮ · R ಮರುಪ್ರಾರಂಭ
     agent_challenge: "ಏಜೆಂಟ್ ಸವಾಲು: ಕಾಣುವ ಬೋರ್ಡ್ ಮತ್ತು ನಿಯಂತ್ರಣಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ 314 ತಲುಪಿ — ಆಟದ ಸ್ಥಿತಿ ಅಥವಾ ಲೋಕಲ್ ಸ್ಟೋರೇಜ್ ಬದಲಿಸಬೇಡಿ."
     share_x: X ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ
     share_result: ಫಲಿತಾಂಶ ಹಂಚಿಕೊಳ್ಳಿ

@@ -25,6 +25,13 @@ ui_page: pi_snake
     <button id="pi_snake-start" class="pi_snake-start-overlay" type="button" data-ui-section="pi_snake" data-ui-key="start">{{ ui.pi_snake.start }}</button>
   </div>
 
+  <div class="pi_snake-pad" aria-label="Snake controls">
+    <button type="button" data-direction="up" aria-label="{{ ui.pi_snake.up }}" data-ui-aria-section="pi_snake" data-ui-aria-key="up">↑</button>
+    <button type="button" data-direction="left" aria-label="{{ ui.pi_snake.left }}" data-ui-aria-section="pi_snake" data-ui-aria-key="left">←</button>
+    <button type="button" data-direction="down" aria-label="{{ ui.pi_snake.down }}" data-ui-aria-section="pi_snake" data-ui-aria-key="down">↓</button>
+    <button type="button" data-direction="right" aria-label="{{ ui.pi_snake.right }}" data-ui-aria-section="pi_snake" data-ui-aria-key="right">→</button>
+  </div>
+
   <div class="pi_snake-actions">
     <button id="pi_snake-pause" type="button" disabled data-ui-section="pi_snake" data-ui-key="pause">{{ ui.pi_snake.pause }}</button>
     <button id="pi_snake-share-result" type="button" hidden data-ui-section="pi_snake" data-ui-key="share_result">{{ ui.pi_snake.share_result }}</button>
@@ -39,13 +46,6 @@ ui_page: pi_snake
       <li data-achievement="38" hidden><span class="pi-achievement-mark" aria-hidden="true">✓</span><span data-ui-section="pi_snake" data-ui-key="milestone_universe">{{ ui.pi_snake.milestone_universe }}</span></li>
       <li data-achievement="314" hidden><span class="pi-achievement-mark" aria-hidden="true">✓</span><span data-ui-section="pi_snake" data-ui-key="milestone_314">{{ ui.pi_snake.milestone_314 }}</span></li>
     </ul>
-  </div>
-
-  <div class="pi_snake-pad" aria-label="Snake controls">
-    <button type="button" data-direction="up" aria-label="{{ ui.pi_snake.up }}" data-ui-aria-section="pi_snake" data-ui-aria-key="up">↑</button>
-    <button type="button" data-direction="left" aria-label="{{ ui.pi_snake.left }}" data-ui-aria-section="pi_snake" data-ui-aria-key="left">←</button>
-    <button type="button" data-direction="down" aria-label="{{ ui.pi_snake.down }}" data-ui-aria-section="pi_snake" data-ui-aria-key="down">↓</button>
-    <button type="button" data-direction="right" aria-label="{{ ui.pi_snake.right }}" data-ui-aria-section="pi_snake" data-ui-aria-key="right">→</button>
   </div>
 </div>
 

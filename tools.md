@@ -14,7 +14,7 @@ ui_page: tools
 
 **[<span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="lazydiff_title">{{ ui.pages.lazydiff_title }}</span>](https://ashok314.github.io/lazydiff/)**<br>
 <span lang="{{ interface_lang }}" data-ui-section="pages" data-ui-key="lazydiff_tagline">{{ ui.pages.lazydiff_tagline }}</span><br>
-<small><a href="https://github.com/Ashok314/lazydiff">GitHub</a></small>
+<small><a href="https://chromewebstore.google.com/detail/bnoohgdhbhegnpdfhneciipfgmmjejhb">Chrome Web Store</a> · <a href="https://github.com/Ashok314/lazydiff">GitHub</a></small>
 
 ---
 
